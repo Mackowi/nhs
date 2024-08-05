@@ -1,6 +1,4 @@
-import logo from '../assets/logo.png'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 function Header() {
   const [open, setOpen] = useState(false)
@@ -8,29 +6,28 @@ function Header() {
   return (
     <header className='container mx-auto p-6 relative '>
       <div className='flex items-center justify-between'>
-        {/* <Link to={'/'}>
-          <img src={logo} alt='logo' className='w-16' />
-        </Link> */}
-        <img src={logo} alt='logo' className='w-16' />
+        <a href='/'>
+          <img src='/logo.png' alt='logo' className='w-16' />
+        </a>
 
-        {/* <div className='hidden md:flex items-center space-x-8 '>
-          <Link to={'/about'} className='link'>
+        <div className='hidden md:flex items-center space-x-8 '>
+          <a href='/about' className='link'>
             About Us
-          </Link>
-          <Link to={'/partners'} className='link'>
+          </a>
+          <a href='/partners' className='link'>
             Our Partners
-          </Link>
-          <Link to={'/solutions'} className='link'>
+          </a>
+          <a href='/about' className='link'>
             Specs & Solutions
-          </Link>
-          <Link to={'/contact'} className='link'>
+          </a>
+          <a href='/contact' className='link'>
             Contact
-          </Link>
-        </div> */}
+          </a>
+        </div>
 
         <button
           id='menu-btn'
-          className={`block hamburger md:hidden focus:outline-none ${
+          className={`block hamburger  md:hidden focus:outline-none ${
             open ? 'open' : ''
           }`}
           type='button'
@@ -50,28 +47,48 @@ function Header() {
           open ? 'flex' : 'hidden'
         } animate-fade`}
       >
-        {/* <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl dark:text-greeny relative'>
-          <Link
-            to='/uslugi'
+        <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl dark:text-greeny relative'>
+          <a
+            href='/about'
             className='link dark:hover:text-greeny'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
             }}
           >
-            Usługi
-          </Link>
-          <Link
-            to='/kontakt'
+            About
+          </a>
+          <a
+            href='/partners'
             className='link dark:hover:text-greeny'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
             }}
           >
-            Kontakt
-          </Link>
-        </div> */}
+            Our Partners
+          </a>
+          <a
+            href='/solutions'
+            className='link dark:hover:text-greeny'
+            onClick={() => {
+              setOpen(!open)
+              document.body.classList.toggle('overflow-hidden')
+            }}
+          >
+            Specs & Solutions
+          </a>
+          <a
+            href='/contact'
+            className='link dark:hover:text-greeny'
+            onClick={() => {
+              setOpen(!open)
+              document.body.classList.toggle('overflow-hidden')
+            }}
+          >
+            Contact
+          </a>
+        </div>
       </div>
     </header>
   )
