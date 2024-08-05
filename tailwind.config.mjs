@@ -16,11 +16,11 @@ export default {
         darkGreen: '#7cc825',
         purple: '#961dff',
         darkPurple: '#761ac6',
-        greeny: '#0C343D',
+        // greeny: '#0C343D',
         lightGreeny: '#7cc825',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Bai Jamjuree', 'sans-serif'],
       },
     },
   },

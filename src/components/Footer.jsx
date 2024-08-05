@@ -7,7 +7,7 @@ function Footer() {
             <img
               src='/logo.png'
               alt='logo'
-              className='w-28 mx-auto mb-16 md:mb-0'
+              className='w-28 mx-auto mb-12 md:mb-0'
             />
           </a>
           <div className='flex flex-col gap-4 tracking-widest font-bold text-sm md:text-left'>
@@ -17,9 +17,9 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-16 text-xl md:text-base'>
-          <a href='/about' className='link'>
+          {/* <a href='/about' className='link'>
             About Us
-          </a>
+          </a> */}
           <a href='/partners' className='link'>
             Our Partners
           </a>

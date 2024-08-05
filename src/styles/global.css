@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .link {
-  @apply tracking-widest text-darkBlue font-bold hover:text-green hover:underline hover:underline-offset-4 hover:decoration-2
+  @apply tracking-widest text-darkBlue font-bold hover:text-darkGreen hover:underline hover:underline-offset-4 hover:decoration-2
 }
 
 .hamburger {
