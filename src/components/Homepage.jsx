@@ -1,3 +1,5 @@
+import Carousel from './Carousel'
+
 function Homepage() {
   return (
     <main>
@@ -42,6 +44,7 @@ function Homepage() {
           <li>Managed Services Providers</li>
         </ul>
       </div>
+      <Carousel />
       <div className='container p-8 md:mt-4 mx-auto flex flex-col items-center'>
         <div className='text-darkBlue'>
           <h2 className='text-5xl font-bold uppercase text-center'>
