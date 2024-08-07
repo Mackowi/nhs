@@ -12,7 +12,7 @@ const images = [
 
 const Carousel = () => {
   return (
-    <div className='overflow-hidden relative w-full container mx-auto'>
+    <div className='overflow-hidden relative w-full container mx-auto mt-4 md:mt-12'>
       <div className='flex animate-scroll'>
         {images.map((src, index) => (
           <img

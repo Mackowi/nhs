@@ -16,7 +16,7 @@ function Footer() {
             <p>rafal.zydek@nghs.eu</p>
           </div>
         </div>
-        <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-16 text-xl md:text-base'>
+        <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>
           {/* <a href='/about' className='link'>
             About Us
           </a> */}
