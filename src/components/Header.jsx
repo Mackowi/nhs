@@ -19,14 +19,14 @@ function Header() {
         </a>
 
         <div className='hidden md:flex items-center space-x-8 '>
-          {/* <a href='/about' className='link'>
-            About Us
-          </a> */}
-          <a href='/partners' className='link'>
-            Our Partners
-          </a>
           <a href='/about' className='link'>
-            Specs & Solutions
+            About Us
+          </a>
+          {/* <a href='/partners' className='link'>
+            Our Partners
+          </a> */}
+          <a href='/about' className='link'>
+            Products / Blog
           </a>
           <a href='/contact' className='link'>
             Contact
