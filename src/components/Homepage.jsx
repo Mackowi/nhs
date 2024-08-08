@@ -1,4 +1,21 @@
-import Carousel from './Carousel'
+const images = [
+  {
+    path: 'slider1.png',
+    url: 'https://objectfirst.com/',
+  },
+  {
+    path: 'slider2.png',
+    url: 'https://www.silicom-usa.com/',
+  },
+  {
+    path: 'slider3.png',
+    url: 'https://www.seagate.com/',
+  },
+  {
+    path: 'slider4.png',
+    url: 'https://nebul.com/',
+  },
+]
 
 function Homepage() {
   return (
@@ -20,16 +37,7 @@ function Homepage() {
             </p>
           </div>
         </div>
-        {/* <p className='w-3/4 mt-10 text-xl text-darkBlue'>
-          "After years of working in the hardware industry, selling hardware
-          solutions of major OEMs, I decided to start NextGen Hardware Solutions
-          with the aim of providing customers with cutting-edge solutions at the
-          best price point. My experience in the industry revealed how big OEMs
-          leverage on vendor lock-ins and heavy licensing models. But guess
-          what? There are great solutions out there without all those
-          disadvantages, and we are here to bring them to you!"-{' '}
-          <strong>Rafal, founder.</strong>
-        </p>{' '} */}
+
         <p className='w-3/4 mt-10 text-xl text-darkBlue'>
           At NextGen Hardware Solutions , our mission is to innovate by
           providing the latest and most efficient hardware solutions in the
@@ -68,15 +76,16 @@ function Homepage() {
           </button>
         </a>
       </div>
-      <Carousel />
-      {/* <div className='container p-8 md:mt-12 mx-auto flex flex-col items-center'>
-        <div className='text-darkBlue'>
-          <h2 className='text-5xl font-bold uppercase text-center'>
-            Our Mission
-          </h2>
+
+      <div className='container mx-auto pt-16'>
+        <div className='flex flex-col md:flex-row'>
+          {images.map((img, index) => (
+            <a href={img.url} className='mx-auto w-3/4 md:w-1/4'>
+              <img key={index} src={img.path} alt={`Image${index + 1}`} />
+            </a>
+          ))}
         </div>
-        <p className='w-3/4 mt-6 text-xl text-darkBlue text-center'></p>
-      </div> */}
+      </div>
     </main>
   )
 }

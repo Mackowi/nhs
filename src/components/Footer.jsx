@@ -17,14 +17,11 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>
-          {/* <a href='/about' className='link'>
+          <a href='/about' className='link'>
             About Us
-          </a> */}
-          <a href='/partners' className='link'>
-            Our Partners
           </a>
-          <a href='/solutions' className='link'>
-            Specs & Solutions
+          <a href='/blog' className='link'>
+            Products / Blog
           </a>
           <a href='/contact' className='link'>
             Contact

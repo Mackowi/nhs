@@ -6,14 +6,6 @@ function Header() {
   return (
     <header className='container mx-auto p-6 relative '>
       <div className='flex items-center justify-between'>
-        {/* <div className='flex items-center'>
-          <a href='/'>
-            <img src='/logo.png' alt='logo' className='w-14' />
-          </a>
-          <h1 className='ml-4 text-3xl font-bold tracking-widest text-darkBlue'>
-            Nextgen Hardware Solution
-          </h1>
-        </div> */}
         <a href='/'>
           <img src='/logo.png' alt='logo' className='w-16' />
         </a>
@@ -22,10 +14,7 @@ function Header() {
           <a href='/about' className='link'>
             About Us
           </a>
-          {/* <a href='/partners' className='link'>
-            Our Partners
-          </a> */}
-          <a href='/about' className='link'>
+          <a href='/blog' className='link'>
             Products / Blog
           </a>
           <a href='/contact' className='link'>
@@ -50,12 +39,12 @@ function Header() {
       </div>
 
       <div
-        className={`fixed left-0 right-0 top-0 bottom-0 bg-white  z-20 dark:border-white h-full ${
+        className={`fixed left-0 right-0 top-0 bottom-0 bg-white z-20 dark:border-white h-full ${
           open ? 'flex' : 'hidden'
         } animate-fade`}
       >
         <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
-          {/* <a
+          <a
             href='/about'
             className='link dark:hover:text-green'
             onClick={() => {
@@ -64,26 +53,16 @@ function Header() {
             }}
           >
             About
-          </a> */}
-          <a
-            href='/partners'
-            className='link dark:hover:text-green'
-            onClick={() => {
-              setOpen(!open)
-              document.body.classList.toggle('overflow-hidden')
-            }}
-          >
-            Our Partners
           </a>
           <a
-            href='/solutions'
+            href='/blog'
             className='link dark:hover:text-green'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
             }}
           >
-            Specs & Solutions
+            Product
           </a>
           <a
             href='/contact'

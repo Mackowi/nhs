@@ -2,7 +2,7 @@
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import AboutUs from '../components/AboutUs.jsx'
+import ContactPage from '../components/ContactPage.jsx'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 ---
 
@@ -17,7 +17,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
   </head>
   <body class='min-h-screen flex flex-col'>
     <Header client:load />
-    <AboutUs />
+    <ContactPage />
     <Footer />
     <script>
       if (window.netlifyIdentity) {
