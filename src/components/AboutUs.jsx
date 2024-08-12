@@ -1,13 +1,13 @@
 function AboutUs() {
   return (
     <div className='flex-grow'>
-      <div className='container p-8 md:mt-12 mx-auto flex flex-col items-center'>
-        <div className='text-darkBlue'>
+      <div className='container py-12 md:mt-12 mx-auto flex flex-col items-center bg-lightPurple rounded-2xl'>
+        <div className='text-white'>
           <h2 className='text-5xl font-bold uppercase text-center'>
             Our Mission
           </h2>
         </div>
-        <p className='w-3/4 mt-6 text-xl text-darkBlue text-center'>
+        <p className='w-3/4 mt-6 text-xl text-white text-center'>
           {' '}
           "After years of working in the hardware industry, selling hardware
           solutions of major OEMs, I decided to start NextGen Hardware Solutions

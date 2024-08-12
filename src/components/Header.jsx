@@ -62,7 +62,7 @@ function Header() {
               document.body.classList.toggle('overflow-hidden')
             }}
           >
-            Product
+            Products / Blog
           </a>
           <a
             href='/contact'

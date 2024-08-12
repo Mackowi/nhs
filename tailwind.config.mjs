@@ -12,9 +12,10 @@ export default {
       colors: {
         blue: '#296cd7',
         darkBlue: '#265296',
-        lightGreen: '#a3d866',
+        lightGreen: '#89CE3B',
         green: '#7cc825',
         darkGreen: '#7cc825',
+        lightPurple: '#9F34FF',
         purple: '#961dff',
         darkPurple: '#761ac6',
       },

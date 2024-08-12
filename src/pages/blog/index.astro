@@ -83,7 +83,7 @@ const posts = (await getCollection('blog')).sort(
     </style>
   </head>
   <body>
-    <Header />
+    <Header client:load />
     <main>
       <section class='container mx-auto border-4'>
         <ul>
