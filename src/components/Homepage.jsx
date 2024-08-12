@@ -25,7 +25,7 @@ function Homepage() {
           <h1 className='text-6xl font-bold uppercase text-center pb-4'>
             Nextgen Hardware Solutions
           </h1>
-          <div className='flex flex-col md:flex-row space-y-4 justify-around font-bold mt-4 items-center'>
+          <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center'>
             <div className='flex items-center gap-2'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
