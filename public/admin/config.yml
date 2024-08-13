@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: 'public/upload',
-public_folder: '/upload',
+media_folder: 'public/upload'
+public_folder: '/upload'
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
