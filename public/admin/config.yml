@@ -12,8 +12,9 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: '{{day}}-{{month}}-{{year}}-{{slug}}' # Filename template, e.g., DD-MM-YYYY-title.md
     fields: # The fields for each document, usually in front matter
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
+      # - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'blog' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
       - { label: 'Blog Entry Image', name: 'heroImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
