@@ -64,7 +64,7 @@ function ContactPage() {
           id='contactHero'
           className='md:hidden mx-3 relative bg-lightGreen rounded-2xl'
         >
-          <h1 className='text-center px-6 py-32 font-bold text-white text-4xl'>
+          <h1 className='text-center px-6 py-32 font-bold text-white text-5xl'>
             Contact
           </h1>
         </div>
@@ -72,7 +72,7 @@ function ContactPage() {
           id='contactHero'
           className='hidden md:block container rounded-2xl mx-auto relative bg-lightGreen'
         >
-          <h1 className='text-center px-6 py-24 font-bold text-white text-4xl'>
+          <h1 className='text-center px-6 py-24 font-bold text-white text-5xl'>
             Contact
           </h1>
         </div>

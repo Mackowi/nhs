@@ -79,9 +79,7 @@ function Homepage() {
       </div>
       <div className='container p-8 py-12 md:mt-12 mx-auto flex flex-col items-center bg-darkBlue rounded-2xl'>
         <div className='text-white'>
-          <h2 className='text-5xl font-bold uppercase text-center'>
-            Who we serve?
-          </h2>
+          <h2 className='text-5xl font-bold text-center'>Who we serve?</h2>
         </div>
         <p className='w-3/4 mt-6 text-xl text-white'>
           NGHS specializes in delivering high-performance IT hardware solutions,
