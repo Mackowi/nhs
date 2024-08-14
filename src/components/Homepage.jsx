@@ -68,7 +68,7 @@ function Homepage() {
           </div>
         </div>
 
-        <p className='w-3/4 mt-10 text-xl text-darkBlue'>
+        <p className='w-3/4 mt-10 text-xl text-darkBlue text-justify'>
           We strive to increase the technological value of your business and
           reduce the costs of your infrastructure, taking into account the
           environmental challenges faced by the IT world. We believe in breaking
@@ -81,7 +81,7 @@ function Homepage() {
         <div className='text-white'>
           <h2 className='text-5xl font-bold text-center'>Who we serve?</h2>
         </div>
-        <p className='w-3/4 mt-6 text-xl text-white'>
+        <p className='w-3/4 mt-6 text-xl text-white text-justify'>
           NGHS specializes in delivering high-performance IT hardware solutions,
           including: servers, storage, networking equipment, AI clusters, with a
           primary focus on catering to the unique needs of sectors such as:
