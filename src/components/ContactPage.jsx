@@ -58,7 +58,7 @@ function ContactPage() {
     // resetField('message')
   }
   return (
-    <div className='flex-grow'>
+    <main className='flex-grow'>
       <div className=''>
         <div
           id='contactHero'
@@ -238,7 +238,7 @@ function ContactPage() {
         </div>
       </div>
       <ToastContainer />
-    </div>
+    </main>
   )
 }
 export default ContactPage

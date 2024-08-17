@@ -1,12 +1,14 @@
-function AboutUs() {
+function AboutPage() {
   return (
-    <div className='flex-grow'>
-      <div className='container p-12 md:mt-12 mx-auto flex flex-col md:flex-row gap-12 bg-lightPurple rounded-2xl'>
-        <div>
+    <main className='flex-grow'>
+      <div className='container p-8 md:mt-12 mx-auto flex flex-col md:flex-row gap-12 bg-lightPurple rounded-2xl tracking-wide'>
+        <div className='flex flex-col md:gap-24'>
           <div className='text-white'>
-            <h2 className='text-5xl font-bold  text-center'>Our Mission</h2>
+            <h2 className='text-5xl font-bold text-center py-8 md:py-0'>
+              Our Mission
+            </h2>
           </div>
-          <p className='mt-6 text-xl text-white text-justify'>
+          <p className='text-xl text-white text-justify '>
             "After years of working in the hardware industry, selling hardware
             solutions of major OEMs, I decided to start NextGen Hardware
             Solutions with the aim of providing customers with cutting-edge
@@ -14,7 +16,10 @@ function AboutUs() {
             revealed how big OEMs leverage on vendor lock-ins and heavy
             licensing models. But guess what? There are great solutions out
             there without all those disadvantages, and we are here to bring them
-            to you!"- <strong>Rafal, founder.</strong>
+            to you!"
+            <br />
+            <br />
+            <strong> - Rafal, founder.</strong>
           </p>
         </div>
         <img
@@ -22,8 +27,9 @@ function AboutUs() {
           alt='founder photo'
           className=' md:w-1/4 rounded-full'
         />
+        <p></p>
       </div>
-    </div>
+    </main>
   )
 }
-export default AboutUs
+export default AboutPage
