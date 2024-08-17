@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  h3 {
+    @apply text-3xl md:text-4xl font-bold
+  }
+}
+
+
 .link {
   @apply tracking-widest text-darkBlue font-bold hover:text-darkGreen hover:underline hover:underline-offset-4 hover:decoration-2
 }
@@ -54,4 +61,12 @@
 
 ul li:first-child .title {
   @apply text-center text-2xl
+}
+
+.serviceSection {
+  @apply flex flex-col text-xl text-justify items-center
+}
+
+.serviceElement {
+  @apply w-3/4 py-12 flex flex-col 
 }

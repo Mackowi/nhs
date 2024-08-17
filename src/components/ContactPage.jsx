@@ -59,10 +59,10 @@ function ContactPage() {
   }
   return (
     <main className='flex-grow'>
-      <div className=''>
+      <div className='mt-12'>
         <div
           id='contactHero'
-          className='md:hidden mx-3 relative bg-lightGreen rounded-2xl'
+          className='md:hidden mx-3 relative bg-green rounded-2xl'
         >
           <h1 className='text-center px-6 py-32 font-bold text-white text-5xl'>
             Contact
@@ -70,7 +70,7 @@ function ContactPage() {
         </div>
         <div
           id='contactHero'
-          className='hidden md:block container rounded-2xl mx-auto relative bg-lightGreen'
+          className='hidden md:block container rounded-2xl mx-auto relative bg-green'
         >
           <h1 className='text-center px-6 py-24 font-bold text-white text-5xl'>
             Contact
@@ -78,10 +78,10 @@ function ContactPage() {
         </div>
       </div>
 
-      <div className='container mx-auto py-12 md:py-20 flex flex-col md:space-y-8 text-center'>
+      <div className='container mx-auto pt-12 md:pt-20 flex flex-col md:space-y-8 text-center'>
         <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-12 md:mx-auto'>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-lightGreen text-darkGreen rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -96,13 +96,13 @@ function ContactPage() {
                   d='M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z'
                 />
               </svg>
-              <p className='tracking-wider font-bold text-darkGreen'>
+              <p className='tracking-wider font-bold text-green'>
                 +31 62 481 34 11
               </p>
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-lightGreen text-darkGreen rounded-lg p-4 '>
+            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4 '>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -118,16 +118,16 @@ function ContactPage() {
                 />
               </svg>
 
-              <p className='hidden sm:block font-bold tracking-wider text-darkGreen'>
+              <p className='hidden sm:block font-bold tracking-wider text-green'>
                 rafal.zydek@nghs.eu
               </p>
-              <p className='sm:hidden text-base font-bold tracking-wider text-darkGreen'>
+              <p className='sm:hidden text-base font-bold tracking-wider text-green'>
                 rafal.zydek@nghs.eu
               </p>
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-lightGreen text-darkGreen rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -147,14 +147,12 @@ function ContactPage() {
                   d='M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z'
                 />
               </svg>
-              <p className='font-bold tracking-wider text-darkGreen'>adres</p>
+              <p className='font-bold tracking-wider text-green'>adres</p>
             </div>
           </div>
         </div>
-        <div className='p-12 md:p-8 rounded-2xl flex flex-col text-darkGreen'>
-          <h3 className='text-3xl md:text-4xl font-bold py-12'>
-            Please fill the below form to contact us
-          </h3>
+        <div className='pb-12 md:pb-8 rounded-2xl flex flex-col text-green'>
+          <h3 className='py-12'>Please fill the below form to contact us</h3>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col space-y-6 md:space-y-8 w-full text-green md:w-3/4 mx-auto '
@@ -165,7 +163,7 @@ function ContactPage() {
                 <input
                   {...register('name', { required: true })}
                   placeholder='Name'
-                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.name && (
                   <span className='text-red-500 pt-1 mt-1'>
@@ -178,7 +176,7 @@ function ContactPage() {
                 <input
                   {...register('lastName')}
                   placeholder='Last Name'
-                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.lastName && (
                   <span className='text-red-500 pt-1'>
@@ -193,7 +191,7 @@ function ContactPage() {
                 <input
                   {...register('email', { required: true })}
                   placeholder='Email'
-                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.email && (
                   <span className='text-red-500 pt-1'>
@@ -206,7 +204,7 @@ function ContactPage() {
                 <input
                   {...register('phone')}
                   placeholder='Phone'
-                  className='border-green rounded-md border-2  p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2  p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.phone && (
                   <span className='text-red-500 pt-1'>
@@ -220,7 +218,7 @@ function ContactPage() {
               <textarea
                 {...register('message', { required: true })}
                 placeholder='Message'
-                className=' rounded-md border-2 border-green p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                className=' rounded-md border-2 border-green p-2 pl-4 tracking-widest focus:outline-green'
               />
               {errors.message && (
                 <span className='text-red-500 pt-1'>
@@ -230,7 +228,7 @@ function ContactPage() {
             </div>
             <button
               type='submit'
-              className='text-2xl text-white py-5 px-10 font-bold bg-lightGreen rounded-full hover:opacity-70 mx-auto'
+              className='text-2xl text-white py-5 px-10 font-bold bg-green rounded-full hover:opacity-70 mx-auto'
             >
               Send
             </button>

@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className='container p-8 md:mt-8 mx-auto flex flex-col items-center'>
+    <div className='container p-8 md:mt-12 mx-auto flex flex-col items-center'>
       <div className='flex flex-col text-darkBlue'>
         <h1 className='text-5xl md:text-6xl font-bold uppercase text-center pb-4'>
           Nextgen Hardware Solutions
