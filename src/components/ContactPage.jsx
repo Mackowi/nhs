@@ -78,7 +78,7 @@ function ContactPage() {
         </div>
       </div>
 
-      <div className='container mx-auto py-12 md:py-20 flex flex-col md:space-y-8 text-center dark:text-white '>
+      <div className='container mx-auto py-12 md:py-20 flex flex-col md:space-y-8 text-center'>
         <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-12 md:mx-auto'>
           <div className='space-y-8'>
             <div className='flex space-x-4 items-center justify-center font-bold border-4 border-lightGreen text-darkGreen rounded-lg p-4'>
@@ -165,7 +165,7 @@ function ContactPage() {
                 <input
                   {...register('name', { required: true })}
                   placeholder='Name'
-                  className='border-green rounded-md border-2 dark:border-white p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
                 />
                 {errors.name && (
                   <span className='text-red-500 pt-1 mt-1'>
@@ -178,7 +178,7 @@ function ContactPage() {
                 <input
                   {...register('lastName')}
                   placeholder='Last Name'
-                  className='border-green rounded-md border-2 dark:border-white p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
                 />
                 {errors.lastName && (
                   <span className='text-red-500 pt-1'>
@@ -193,7 +193,7 @@ function ContactPage() {
                 <input
                   {...register('email', { required: true })}
                   placeholder='Email'
-                  className='border-green rounded-md border-2 dark:border-white p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-lightGreen'
                 />
                 {errors.email && (
                   <span className='text-red-500 pt-1'>
@@ -206,7 +206,7 @@ function ContactPage() {
                 <input
                   {...register('phone')}
                   placeholder='Phone'
-                  className='border-green rounded-md border-2 dark:border-white p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                  className='border-green rounded-md border-2  p-2 pl-4 tracking-widest focus:outline-lightGreen'
                 />
                 {errors.phone && (
                   <span className='text-red-500 pt-1'>
@@ -220,7 +220,7 @@ function ContactPage() {
               <textarea
                 {...register('message', { required: true })}
                 placeholder='Message'
-                className='border-green rounded-md border-2 dark:border-white p-2 pl-4 tracking-widest focus:outline-lightGreen'
+                className=' rounded-md border-2 border-green p-2 pl-4 tracking-widest focus:outline-lightGreen'
               />
               {errors.message && (
                 <span className='text-red-500 pt-1'>

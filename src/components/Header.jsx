@@ -46,7 +46,7 @@ function Header() {
         <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
           <a
             href='/about'
-            className='link dark:hover:text-green'
+            className='link'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
@@ -56,7 +56,7 @@ function Header() {
           </a>
           <a
             href='/blog'
-            className='link dark:hover:text-green'
+            className='link'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
@@ -66,7 +66,7 @@ function Header() {
           </a>
           <a
             href='/contact'
-            className='link dark:hover:text-green'
+            className='link'
             onClick={() => {
               setOpen(!open)
               document.body.classList.toggle('overflow-hidden')
