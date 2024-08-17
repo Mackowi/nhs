@@ -39,7 +39,7 @@ function Header() {
       </div>
 
       <div
-        className={`fixed left-0 right-0 top-0 bottom-0 bg-white z-20 dark:border-white h-full ${
+        className={`fixed left-0 right-0 top-0 bottom-0 bg-white z-20 h-full ${
           open ? 'flex' : 'hidden'
         } animate-fade`}
       >

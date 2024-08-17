@@ -22,7 +22,7 @@ function Homepage() {
     <main>
       <div className='container p-8 md:mt-8 mx-auto flex flex-col items-center'>
         <div className='flex flex-col text-darkBlue'>
-          <h1 className='text-6xl font-bold uppercase text-center pb-4'>
+          <h1 className='text-5xl md:text-6xl font-bold uppercase text-center pb-4'>
             Nextgen Hardware Solutions
           </h1>
           <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center'>
@@ -86,9 +86,9 @@ function Homepage() {
           including: servers, storage, networking equipment, AI clusters, with a
           primary focus on catering to the unique needs of sectors such as:
         </p>
-        <ul className='text-xl text-white list-disc mt-6'>
+        <ul className='text-xl text-white list-disc mt-6 px-16'>
           <li>Cloud Providers</li>
-          <li>Large& Mid Enterprises</li>
+          <li>Large & Mid Enterprises</li>
           <li>Data Centers</li>
           <li>Managed Services Providers</li>
         </ul>

@@ -52,15 +52,6 @@
   background: #265296;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-scroll {
-  animation: scroll 10s linear infinite;
+ul li:first-child .title {
+  @apply text-center text-2xl
 }
