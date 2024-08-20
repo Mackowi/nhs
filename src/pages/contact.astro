@@ -18,7 +18,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
   <body class='min-h-screen flex flex-col'>
     <Header client:load />
     <ContactPage />
-    <Footer />
+    <Footer client:load />
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {

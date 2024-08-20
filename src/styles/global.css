@@ -5,7 +5,15 @@
 
 @layer base {
   h3 {
+    @apply text-4xl md:text-5xl font-bold
+  }
+
+  h3 {
     @apply text-3xl md:text-4xl font-bold
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl font-bold
   }
 }
 

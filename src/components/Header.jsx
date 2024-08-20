@@ -1,7 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 function Header() {
   const [open, setOpen] = useState(false)
+  const [currentPage, setCurrentPage] = useState('')
+
+  useEffect(() => {
+    if (window.location.pathname === '/') {
+      setCurrentPage('home')
+      console.log(currentPage)
+    } else if (window.location.pathname === '/about') {
+      setCurrentPage('about')
+    } else if (window.location.pathname === '/blog') {
+      setCurrentPage('blog')
+    } else if (window.location.pathname === '/contact') {
+      setCurrentPage('contact')
+    }
+  }, [])
 
   return (
     <header className='container mx-auto p-6 relative '>
@@ -9,17 +23,27 @@ function Header() {
         <a href='/'>
           <img src='/logo.png' alt='logo' className='w-16' />
         </a>
-
         <div className='hidden md:flex items-center space-x-8 '>
-          <a href='/about' className='link'>
-            About Us
-          </a>
-          <a href='/blog' className='link'>
-            Products / Blog
-          </a>
-          <a href='/contact' className='link'>
-            Contact
-          </a>
+          {currentPage !== 'home' && (
+            <a href='/' className='link'>
+              Home
+            </a>
+          )}
+          {currentPage !== 'about' && (
+            <a href='/about' className='link'>
+              About Us
+            </a>
+          )}
+          {currentPage !== 'blog' && (
+            <a href='/blog' className='link'>
+              Products / Blog
+            </a>
+          )}
+          {currentPage !== 'contact' && (
+            <a href='/contact' className='link'>
+              Contact
+            </a>
+          )}
         </div>
         <button
           id='menu-btn'
@@ -44,36 +68,54 @@ function Header() {
         } animate-fade`}
       >
         <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
-          <a
-            href='/about'
-            className='link'
-            onClick={() => {
-              setOpen(!open)
-              document.body.classList.toggle('overflow-hidden')
-            }}
-          >
-            About
-          </a>
-          <a
-            href='/blog'
-            className='link'
-            onClick={() => {
-              setOpen(!open)
-              document.body.classList.toggle('overflow-hidden')
-            }}
-          >
-            Products / Blog
-          </a>
-          <a
-            href='/contact'
-            className='link'
-            onClick={() => {
-              setOpen(!open)
-              document.body.classList.toggle('overflow-hidden')
-            }}
-          >
-            Contact
-          </a>
+          {currentPage !== 'home' && (
+            <a
+              href='/'
+              className='link'
+              onClick={() => {
+                setOpen(!open)
+                document.body.classList.toggle('overflow-hidden')
+              }}
+            >
+              Home
+            </a>
+          )}
+          {currentPage !== 'about' && (
+            <a
+              href='/about'
+              className='link'
+              onClick={() => {
+                setOpen(!open)
+                document.body.classList.toggle('overflow-hidden')
+              }}
+            >
+              About
+            </a>
+          )}
+          {currentPage !== 'blog' && (
+            <a
+              href='/blog'
+              className='link'
+              onClick={() => {
+                setOpen(!open)
+                document.body.classList.toggle('overflow-hidden')
+              }}
+            >
+              Product / services
+            </a>
+          )}{' '}
+          {currentPage !== 'contact' && (
+            <a
+              href='/contact'
+              className='link'
+              onClick={() => {
+                setOpen(!open)
+                document.body.classList.toggle('overflow-hidden')
+              }}
+            >
+              Contact
+            </a>
+          )}
         </div>
       </div>
     </header>

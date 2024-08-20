@@ -1,7 +1,7 @@
 function AboutPage() {
   return (
     <main className='flex-grow'>
-      <div className='container  p-8 mt-12 mx-auto flex flex-col md:flex-row gap-12 bg-lightPurple rounded-2xl tracking-wide'>
+      <div className='container p-8 mt-12 mx-auto flex flex-col md:flex-row gap-12 bg-lightPurple rounded-2xl tracking-wide'>
         <div className='flex flex-col md:gap-24'>
           <div className='text-white'>
             <h2 className='text-5xl font-bold text-center py-8 md:py-0'>

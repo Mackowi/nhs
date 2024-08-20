@@ -7,10 +7,11 @@ function HomePage() {
   return (
     <main>
       <Hero />
-      <Info />
-      <Companies />
       <Services />
+      <Companies />
+      <Info />
     </main>
   )
 }
+
 export default HomePage

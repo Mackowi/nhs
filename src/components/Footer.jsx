@@ -1,4 +1,20 @@
+import { useEffect, useState } from 'react'
+
 function Footer() {
+  const [currentPage, setCurrentPage] = useState('')
+
+  useEffect(() => {
+    if (window.location.pathname === '/') {
+      setCurrentPage('home')
+    } else if (window.location.pathname === '/about') {
+      setCurrentPage('about')
+    } else if (window.location.pathname === '/blog') {
+      setCurrentPage('blog')
+    } else if (window.location.pathname === '/contact') {
+      setCurrentPage('contact')
+    }
+  }, [])
+
   return (
     <footer className='py-8 bg-white text-darkBlue'>
       <div className='container flex flex-col md:flex-row items-center justify-between mx-auto md:space-y-0 text-center px-6'>
@@ -17,15 +33,26 @@ function Footer() {
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>
-          <a href='/about' className='link'>
-            About Us
-          </a>
-          <a href='/blog' className='link'>
-            Products / Blog
-          </a>
-          <a href='/contact' className='link'>
-            Contact
-          </a>
+          {currentPage !== 'home' && (
+            <a href='/' className='link'>
+              Home
+            </a>
+          )}
+          {currentPage !== 'about' && (
+            <a href='/about' className='link'>
+              About Us
+            </a>
+          )}
+          {currentPage !== 'blog' && (
+            <a href='/blog' className='link'>
+              Products / Blog
+            </a>
+          )}
+          {currentPage !== 'contact' && (
+            <a href='/contact' className='link'>
+              Contact
+            </a>
+          )}
         </div>
       </div>
     </footer>
