@@ -1,7 +1,7 @@
 function Services() {
   return (
     <div className='container mx-auto flex flex-col text-white py-8'>
-      <div className='bg-darkBlue serviceSection rounded-t-2xl'>
+      <div className='bg-blue serviceSection rounded-t-2xl'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8 '>
             <h3>We resell</h3>
@@ -21,7 +21,7 @@ function Services() {
           </p>
         </div>
       </div>
-      <div className='bg-purple serviceSection'>
+      <div className='bg-darkBlue serviceSection'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8'>
             <h3>We integrate</h3>
@@ -42,7 +42,7 @@ function Services() {
         </div>
       </div>
 
-      <div className='bg-green serviceSection rounded-b-2xl'>
+      <div className='bg-darkerBlue serviceSection rounded-b-2xl'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8'>
             <h3>Sustainability services</h3>

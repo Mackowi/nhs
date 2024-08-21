@@ -19,7 +19,7 @@
 
 
 .link {
-  @apply tracking-widest text-darkBlue font-bold hover:text-darkGreen hover:underline hover:underline-offset-4 hover:decoration-2
+  @apply tracking-widest text-blue font-bold hover:text-darkerBlue hover:underline hover:underline-offset-4 hover:decoration-2
 }
 
 .hamburger {

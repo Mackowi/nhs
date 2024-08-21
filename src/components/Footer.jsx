@@ -16,7 +16,7 @@ function Footer() {
   }, [])
 
   return (
-    <footer className='py-8 bg-white text-darkBlue'>
+    <footer className='py-8 bg-white text-blue'>
       <div className='container flex flex-col md:flex-row items-center justify-between mx-auto md:space-y-0 text-center px-6'>
         <div className='flex flex-col md:flex-row md:space-x-8 items-center'>
           <a href='/'>

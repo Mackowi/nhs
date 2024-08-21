@@ -10,8 +10,11 @@ export default {
     },
     extend: {
       colors: {
+        lighterBlue: '#5175AB',
+        lightBlue: '#3c63a1',
         blue: '#296cd7',
         darkBlue: '#265296',
+        darkerBlue: '#1e4278',
         lightGreen: '#89CE3B',
         green: '#7cc825',
         darkGreen: '#7cc825',

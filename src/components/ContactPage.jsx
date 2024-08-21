@@ -81,7 +81,7 @@ function ContactPage() {
       <div className='container mx-auto pt-12 md:pt-20 flex flex-col md:space-y-8 text-center'>
         <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-12 md:mx-auto'>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -102,7 +102,7 @@ function ContactPage() {
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4 '>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4 '>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -127,7 +127,7 @@ function ContactPage() {
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-4 border-green text-green rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
