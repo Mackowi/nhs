@@ -1,16 +1,20 @@
-function Hero() {
+function Hero({ isFirstVisit }) {
   return (
     <div className='container md:mt-16 md:mb-12 mx-auto flex flex-col items-center'>
       <div className='flex flex-col text-blue'>
         <h1
-          className='text-5xl md:text-6xl font-bold uppercase text-center pb-4 toAnimateFade'
+          className={`text-5xl md:text-6xl font-bold uppercase text-center pb-4 ${
+            isFirstVisit ? 'toAnimateFade' : ''
+          }`}
           style={{ animationDelay: '0.5s' }}
         >
           Nextgen Hardware Solutions
         </h1>
         <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center '>
           <div
-            className='flex items-center gap-2 toAnimateFade'
+            className={`flex items-center gap-2 ${
+              isFirstVisit ? 'toAnimateFade' : ''
+            }`}
             style={{ animationDelay: '1s' }}
           >
             <svg
@@ -26,7 +30,9 @@ function Hero() {
             </h4>
           </div>
           <div
-            className='flex items-center gap-2 toAnimateFade'
+            className={`flex items-center gap-2 ${
+              isFirstVisit ? 'toAnimateFade' : ''
+            }`}
             style={{ animationDelay: '1.5s' }}
           >
             <svg
@@ -43,7 +49,9 @@ function Hero() {
           </div>
 
           <div
-            className='flex items-center gap-2 toAnimateFade'
+            className={`flex items-center gap-2 ${
+              isFirstVisit ? 'toAnimateFade' : ''
+            }`}
             style={{ animationDelay: '2s' }}
           >
             <svg
@@ -62,7 +70,9 @@ function Hero() {
       </div>
 
       <p
-        className='w-3/4 mt-10 text-xl text-blue text-justify toAnimateFade'
+        className={`w-3/4 mt-10 text-xl text-blue text-justify ${
+          isFirstVisit ? 'toAnimateFade' : ''
+        }`}
         style={{ animationDelay: '2.5s' }}
       >
         We strive to increase the technological value of your business and

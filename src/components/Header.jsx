@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 function Header() {
   const [open, setOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('')
+  const [isFirstVisit, setIsFirstVisit] = useState(false)
 
   useEffect(() => {
     if (window.location.pathname === '/') {
@@ -14,12 +15,19 @@ function Header() {
     } else if (window.location.pathname === '/contact') {
       setCurrentPage('contact')
     }
+    const visitedBefore = localStorage.getItem('isFirstVisit')
+    if (!visitedBefore) {
+      setIsFirstVisit(true)
+      // localStorage.setItem('isFirstVisit', 'true')
+    }
   }, [])
 
   return (
-    <header className='container mx-auto p-6 relative '>
+    <header className='container mx-auto p-6 relative'>
       <div
-        className='flex items-center justify-between toAnimateFade'
+        className={`flex items-center justify-between ${
+          currentPage === 'home' && isFirstVisit ? 'toAnimateFade' : ''
+        }`}
         style={{ animationDelay: currentPage === 'home' ? '3s' : '0s' }}
       >
         <a href='/'>
