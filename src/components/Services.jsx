@@ -1,6 +1,9 @@
 function Services() {
   return (
-    <div className='container mx-auto flex flex-col text-white py-8'>
+    <div
+      className='container mx-auto flex flex-col text-white py-8 toAnimateMove'
+      style={{ animationDelay: '3s' }}
+    >
       <div className='bg-blue serviceSection rounded-t-2xl'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8 '>

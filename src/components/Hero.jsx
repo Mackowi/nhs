@@ -2,11 +2,17 @@ function Hero() {
   return (
     <div className='container md:mt-16 md:mb-12 mx-auto flex flex-col items-center'>
       <div className='flex flex-col text-blue'>
-        <h1 className='text-5xl md:text-6xl font-bold uppercase text-center pb-4'>
+        <h1
+          className='text-5xl md:text-6xl font-bold uppercase text-center pb-4 toAnimateFade'
+          style={{ animationDelay: '0.5s' }}
+        >
           Nextgen Hardware Solutions
         </h1>
-        <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center'>
-          <div className='flex items-center gap-2'>
+        <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center '>
+          <div
+            className='flex items-center gap-2 toAnimateFade'
+            style={{ animationDelay: '1s' }}
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 640 512'
@@ -19,7 +25,10 @@ function Hero() {
               Resale
             </h4>
           </div>
-          <div className='flex items-center gap-2'>
+          <div
+            className='flex items-center gap-2 toAnimateFade'
+            style={{ animationDelay: '1.5s' }}
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 512 512'
@@ -33,7 +42,10 @@ function Hero() {
             </h4>
           </div>
 
-          <div className='flex items-center gap-2'>
+          <div
+            className='flex items-center gap-2 toAnimateFade'
+            style={{ animationDelay: '2s' }}
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 576 512'
@@ -49,7 +61,10 @@ function Hero() {
         </div>
       </div>
 
-      <p className='w-3/4 mt-10 text-xl text-blue text-justify'>
+      <p
+        className='w-3/4 mt-10 text-xl text-blue text-justify toAnimateFade'
+        style={{ animationDelay: '2.5s' }}
+      >
         We strive to increase the technological value of your business and
         reduce the costs of your infrastructure, taking into account the
         environmental challenges faced by the IT world. We believe in breaking

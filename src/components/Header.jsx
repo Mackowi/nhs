@@ -19,7 +19,10 @@ function Header() {
 
   return (
     <header className='container mx-auto p-6 relative '>
-      <div className='flex items-center justify-between'>
+      <div
+        className='flex items-center justify-between toAnimateFade'
+        style={{ animationDelay: '3s' }}
+      >
         <a href='/'>
           <img src='/logo.png' alt='logo' className='w-16' />
         </a>

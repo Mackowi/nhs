@@ -78,3 +78,14 @@ ul li:first-child .title {
 .serviceElement {
   @apply w-3/4 py-12 flex flex-col 
 }
+
+.toAnimateFade {
+ @apply opacity-0 animate-fade-in
+}
+
+.toAnimateMove {
+ @apply opacity-0 animate-move-up
+}
+
+
+
