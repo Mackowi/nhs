@@ -7,7 +7,6 @@ function Header() {
   useEffect(() => {
     if (window.location.pathname === '/') {
       setCurrentPage('home')
-      console.log(currentPage)
     } else if (window.location.pathname === '/about') {
       setCurrentPage('about')
     } else if (window.location.pathname === '/blog') {
@@ -21,7 +20,7 @@ function Header() {
     <header className='container mx-auto p-6 relative '>
       <div
         className='flex items-center justify-between toAnimateFade'
-        style={{ animationDelay: '3s' }}
+        style={{ animationDelay: currentPage === 'home' ? '3s' : '0s' }}
       >
         <a href='/'>
           <img src='/logo.png' alt='logo' className='w-16' />
