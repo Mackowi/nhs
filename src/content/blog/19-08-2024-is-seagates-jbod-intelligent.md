@@ -1,9 +1,11 @@
 ---
 title: Is Seagate's JBOD intelligent?!
-description: "Seagate Courvault JBOD "
+description: 'Seagate Courvault JBOD '
 pubDate: 2024-08-19T15:37:00.000Z
 heroImage: /upload/exos-corvault_left-open_lo-res.jpg
+tags: ['storage', 'seagate']
 ---
+
 Seagate launched around 2022 their own storage solutions. It fits in broader trend of hardware manufacturers entering related horizontals. Seagate is known primarily as leading HDD and SSDs vendor.
 
 Seagate released few series of storage as: Exos X, Exos AP, Exos E and their flagship Exos Corvault.

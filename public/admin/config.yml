@@ -18,3 +18,10 @@ collections:
       - { label: 'Publish Date', name: 'pubDate', widget: 'datetime' }
       - { label: 'Blog Entry Image', name: 'heroImage', widget: 'image' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+      - {
+          label: 'Tags',
+          name: 'tags',
+          widget: 'list',
+          allow_add: true,
+          hint: 'Add relevant tags for this post.',
+        }
