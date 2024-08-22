@@ -16,7 +16,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
   </head>
 
   <body>
-    <Header />
+    <Header client:load />
     <main class='container mx-auto px-4'>
       <article>
         <div>
@@ -49,6 +49,6 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props
         </div>
       </article>
     </main>
-    <Footer />
+    <Footer client:load />
   </body>
 </html>
