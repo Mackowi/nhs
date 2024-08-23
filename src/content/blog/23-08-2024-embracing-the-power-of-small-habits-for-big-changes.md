@@ -2,7 +2,7 @@
 title: Embracing the Power of Small Habits for Big Changes
 description: Embracing the Power of Small Habits for Big Changes
 pubDate: 2024-08-23T21:04:00.000Z
-heroImage: /upload/rebuild-times.png
+heroImage: /upload/img_1777.jpg
 tags:
   - server
   - intel
