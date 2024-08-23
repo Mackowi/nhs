@@ -17,7 +17,6 @@
   }
 }
 
-
 .link {
   @apply tracking-widest text-blue font-bold hover:text-darkerBlue hover:underline hover:underline-offset-4 hover:decoration-2
 }
@@ -85,6 +84,10 @@ ul li:first-child .title {
 
 .toAnimateMove {
  @apply opacity-0 animate-move-up
+}
+
+.companiesLogoBorder {
+  @apply border-blue/20 border-b-2 border-l-2 border-r-2 rounded-2xl
 }
 
 

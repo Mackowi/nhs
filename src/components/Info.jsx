@@ -1,6 +1,6 @@
 function Info() {
   return (
-    <div className='container py-12 md:mb-20 md:mt-12 mx-auto flex flex-col items-center bg-blue rounded-2xl'>
+    <div className='container py-12 my-12 md:mb-20 md:mt-12 mx-auto flex flex-col items-center bg-blue rounded-2xl'>
       <div className='text-white w-3/4'>
         <h2 className='text-4xl font-bold text-center'>Who we serve?</h2>
         <p className='mt-6 text-xl text-white text-justify'>

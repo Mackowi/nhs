@@ -3,14 +3,14 @@ function Hero({ isFirstVisit }) {
     <div className='container md:mt-16 md:mb-12 mx-auto flex flex-col items-center'>
       <div className='flex flex-col text-blue'>
         <h1
-          className={`text-5xl md:text-6xl font-bold uppercase text-center pb-4 ${
+          className={`text-5xl md:text-6xl font-bold uppercase text-center py-8 ${
             isFirstVisit ? 'toAnimateFade' : ''
           }`}
           style={{ animationDelay: '0.5s' }}
         >
           Nextgen Hardware Solutions
         </h1>
-        <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold mt-4 items-center '>
+        <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold items-center py-4'>
           <div
             className={`flex items-center gap-2 ${
               isFirstVisit ? 'toAnimateFade' : ''

@@ -17,7 +17,7 @@ function Footer() {
 
   return (
     <footer className='py-8 bg-white text-blue'>
-      <div className='container flex flex-col md:flex-row items-center justify-between mx-auto md:space-y-0 text-center px-6'>
+      <div className='container flex flex-col md:flex-row items-center justify-between mx-auto md:space-y-0 text-center'>
         <div className='flex flex-col md:flex-row md:space-x-8 items-center'>
           <a href='/'>
             <img
@@ -30,6 +30,7 @@ function Footer() {
             <p>Rafal Żydek</p>
             <p>+31 62 481 34 11</p>
             <p>rafal.zydek@nghs.eu</p>
+            <p>Amersfoort, Netherlands</p>
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>

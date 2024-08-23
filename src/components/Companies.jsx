@@ -23,8 +23,8 @@ const images = [
 
 function Companies() {
   return (
-    <div className='container mx-auto pb-8 md:pt-8'>
-      <div className='hidden md:flex bg-blue text-white text-center py-2 rounded-2xl mb-8'>
+    <div className='container mx-auto py-12'>
+      <div className='hidden md:flex bg-blue text-white text-center py-2 rounded-2xl mb-2'>
         <div className='w-4/5 md:w-1/4 border-r-2'>
           <h4>Server</h4>
         </div>
@@ -38,18 +38,18 @@ function Companies() {
           <h4>AI</h4>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row items-center md:items-start'>
-        <div className='flex flex-col w-4/5 md:w-1/4'>
-          <h3 className='bg-blue text-white text-center md:hidden block rounded-2xl mb-6 py-2'>
+      <div className='flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-0'>
+        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
+          <h4 className='bg-blue text-white text-center md:hidden block py-1 rounded-t-xl'>
             Server
-          </h3>
+          </h4>
           <div className='flex flex-col'></div>
           <a href={images[4].url} className='mx-auto '>
             <img key={`Kaytus`} src={images[4].path} alt={`Logo Kaytus`} />
           </a>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4'>
-          <h3 className='bg-blue text-white text-center md:hidden block rounded-2xl mb-6 py-2'>
+        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
+          <h3 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
             Storage
           </h3>
           <div className='flex flex-col'>
@@ -65,20 +65,20 @@ function Companies() {
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 '>
-          <h3 className='bg-blue text-white text-center md:hidden block rounded-2xl mb-6 py-2'>
+        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
+          <h4 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
             Networking
-          </h3>
+          </h4>
           <div className='flex flex-col'>
             <a href={images[1].url} className='mx-auto'>
               <img key={`Silicom`} src={images[1].path} alt={`Logo Silicom`} />
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 '>
-          <h3 className='bg-blue text-white text-center md:hidden block rounded-2xl mb-6 py-2'>
+        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none mb-12'>
+          <h4 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
             AI
-          </h3>
+          </h4>
           <div className='flex flex-col'>
             <a href={images[3].url} className='mx-auto'>
               <img key={`Nebul`} src={images[3].path} alt={`Logo Nebul`} />

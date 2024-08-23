@@ -9,7 +9,31 @@ import Header from '../../components/Header'
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
-console.log(posts[0].data.tags)
+
+const tagCount: Record<string, number> = {}
+
+posts.forEach((post) => {
+  const tags = post.data.tags || []
+  tags.forEach((tag) => {
+    if (tagCount[tag]) {
+      tagCount[tag] += 1
+    } else {
+      tagCount[tag] = 1
+    }
+  })
+})
+const selectedTags = Object.keys(tagCount)
+console.log('Selected Tags:', selectedTags)
+console.log('Tag Counts:', tagCount)
+
+const filteredPosts = posts.filter((post) => {
+  return post.data.tags?.some((tag) => selectedTags.includes(tag))
+})
+
+const selectedTagsArray = Object.keys(tagCount).map((tag) => ({
+  name: tag,
+  count: tagCount[tag],
+}))
 ---
 
 <!doctype html>
@@ -20,7 +44,13 @@ console.log(posts[0].data.tags)
   <body>
     <Header client:load />
     <main class='container mx-auto mt-4'>
-      <div class='bg-slate-500'>test</div>
+      <div class='x bg-slate-300 mx-6'>
+        {
+          selectedTagsArray.map((tag) => (
+            <button>{`${tag.name} - ${tag.count}`}</button>
+          ))
+        }
+      </div>
       <section class='p-8'>
         <ul class='flex flex-wrap gap-1 md:gap-4 justify-center'>
           {
