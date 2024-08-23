@@ -3,37 +3,12 @@ import BaseHead from '../../components/BaseHead.astro'
 import Footer from '../../components/Footer'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
 import { getCollection } from 'astro:content'
-import FormattedDate from '../../components/FormattedDate.astro'
 import Header from '../../components/Header'
+import Blog from '../../components/Blog'
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
-
-const tagCount: Record<string, number> = {}
-
-posts.forEach((post) => {
-  const tags = post.data.tags || []
-  tags.forEach((tag) => {
-    if (tagCount[tag]) {
-      tagCount[tag] += 1
-    } else {
-      tagCount[tag] = 1
-    }
-  })
-})
-const selectedTags = Object.keys(tagCount)
-console.log('Selected Tags:', selectedTags)
-console.log('Tag Counts:', tagCount)
-
-const filteredPosts = posts.filter((post) => {
-  return post.data.tags?.some((tag) => selectedTags.includes(tag))
-})
-
-const selectedTagsArray = Object.keys(tagCount).map((tag) => ({
-  name: tag,
-  count: tagCount[tag],
-}))
 ---
 
 <!doctype html>
@@ -43,36 +18,7 @@ const selectedTagsArray = Object.keys(tagCount).map((tag) => ({
   </head>
   <body>
     <Header client:load />
-    <main class='container mx-auto mt-4'>
-      <!-- <div class='x bg-slate-300 mx-6'>
-        {
-          selectedTagsArray.map((tag) => (
-            <button>{`${tag.name} - ${tag.count}`}</button>
-          ))
-        }
-      </div> -->
-      <section class='p-8'>
-        <ul class='flex flex-wrap gap-8 justify-center'>
-          {
-            posts.map((post, index) => (
-              <li class='w-full md:w-[47%] text-center md:first:w-full md:first:mb-20 first:mb-8'>
-                <a href={`/blog/${post.slug}/`}>
-                  <img
-                    src={post.data.heroImage}
-                    alt={`blog post${index}`}
-                    class='rounded-xl h-[400px] md:h-[500px] w-full object-cover hover:shadow-2xl'
-                  />
-                  <h5 class='mt-2 title'>{post.data.title}</h5>
-                  <p class='date mb-2'>
-                    <FormattedDate date={post.data.pubDate} />
-                  </p>
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
-    </main>
+    <Blog posts={posts} client:load />
     <Footer client:load />
   </body>
 </html>
