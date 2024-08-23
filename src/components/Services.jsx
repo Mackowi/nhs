@@ -7,7 +7,7 @@ function Services({ isFirstVisit }) {
       style={{ animationDelay: '3s' }}
     >
       <div className='bg-blue serviceSection rounded-t-2xl'>
-        <div className='serviceElement'>
+        <div className='serviceElement' id='resale'>
           <div className='flex items-center gap-4 pb-8 '>
             <h3>We resell</h3>
             <svg
@@ -26,7 +26,7 @@ function Services({ isFirstVisit }) {
           </p>
         </div>
       </div>
-      <div className='bg-darkBlue serviceSection'>
+      <div className='bg-darkBlue serviceSection' id='integration'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8'>
             <h3>We integrate</h3>
@@ -47,7 +47,10 @@ function Services({ isFirstVisit }) {
         </div>
       </div>
 
-      <div className='bg-darkerBlue serviceSection rounded-b-2xl'>
+      <div
+        className='bg-darkerBlue serviceSection rounded-b-2xl'
+        id='susServices'
+      >
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8'>
             <h3>Sustainability services</h3>
