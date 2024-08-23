@@ -1,7 +1,7 @@
 function Services({ isFirstVisit }) {
   return (
     <div
-      className={`container mx-auto flex flex-col text-white py-8 ${
+      className={`container mx-auto flex flex-col text-white py-8 mt-12${
         isFirstVisit ? 'toAnimateMove' : ''
       }`}
       style={{ animationDelay: '3s' }}

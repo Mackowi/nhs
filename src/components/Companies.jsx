@@ -75,7 +75,7 @@ function Companies() {
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none mb-12'>
+        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
           <h4 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
             AI
           </h4>

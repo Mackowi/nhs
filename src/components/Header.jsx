@@ -23,7 +23,7 @@ function Header() {
   }, [])
 
   return (
-    <header className='container mx-auto p-4 md:p-0 relative'>
+    <header className='container mx-auto p-6 relative'>
       <div
         className={`flex items-center justify-between ${
           currentPage === 'home' && isFirstVisit ? 'toAnimateFade' : ''
