@@ -39,7 +39,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
       ? posts
       : posts.filter((post: any) => {
           const postTags = post.data.tags || []
-          return postTags.some((tag) => selectedTags.includes(tag))
+          return postTags.some((tag: never) => selectedTags.includes(tag))
         })
 
   console.log('filteredPosts:')

@@ -8,11 +8,11 @@ function Header() {
   useEffect(() => {
     if (window.location.pathname === '/') {
       setCurrentPage('home')
-    } else if (window.location.pathname === '/about') {
+    } else if (window.location.pathname === '/about/') {
       setCurrentPage('about')
-    } else if (window.location.pathname === '/blog') {
+    } else if (window.location.pathname === '/blog/') {
       setCurrentPage('blog')
-    } else if (window.location.pathname === '/contact') {
+    } else if (window.location.pathname === '/contact/') {
       setCurrentPage('contact')
     }
     const visitedBefore = localStorage.getItem('isFirstVisit')
