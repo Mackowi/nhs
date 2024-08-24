@@ -1,12 +1,12 @@
-function Info() {
+function Info({ currentLocale, textContent }) {
   return (
-    <div className='container p-12 my-12 md:mb-20 md:mt-12 mx-auto flex flex-col items-center bg-blue rounded-2xl gap-8'>
+    <div className='container p-8 my-12 md:mb-20 md:mt-12 mx-auto flex flex-col items-center bg-blue rounded-2xl gap-8'>
       <div className='text-white md:w-3/4'>
-        <h2 className='text-4xl font-bold text-center'>Who we serve?</h2>
+        <h2 className='text-4xl font-bold text-center'>
+          {textContent[`${currentLocale}`].homepage.info[1]}
+        </h2>
         <p className='mt-6 text-xl text-white text-justify'>
-          NGHS specializes in delivering high-performance IT hardware solutions,
-          including: servers, storage, networking equipment, AI clusters, with a
-          primary focus on catering to the unique needs of sectors such as:
+          {textContent[`${currentLocale}`].homepage.info[2]}
         </p>
       </div>
       {/* <ul className='text-xl text-white list-disc mt-6'>
@@ -15,16 +15,24 @@ function Info() {
         <li>Data Centers</li>
         <li>Managed Services Providers</li>
       </ul> */}
-      <div className='flex flex-col bg-darkerBlue text-xl text-white font-bold rounded-2xl gap-4 py-6 px-8'>
-        <p className='p-2  tracking-widest'>Cloud Providers</p>
-        <p className='p-2  tracking-widest'>Large & Mid Enterprises</p>
-        <p className='p-2  tracking-widest'>Data Centers</p>
-        <p className='p-2  tracking-widest'>Managed Services Providers</p>
+      <div className='flex flex-col bg-darkerBlue text-xl text-white font-bold rounded-2xl gap-4 md:gap-2 py-6 px-8'>
+        <p className='p-2  tracking-widest'>
+          {textContent[`${currentLocale}`].homepage.info[3]}
+        </p>
+        <p className='p-2  tracking-widest'>
+          {textContent[`${currentLocale}`].homepage.info[4]}
+        </p>
+        <p className='p-2  tracking-widest'>
+          {textContent[`${currentLocale}`].homepage.info[5]}
+        </p>
+        <p className='p-2  tracking-widest'>
+          {textContent[`${currentLocale}`].homepage.info[6]}
+        </p>
       </div>
 
-      <a href='/contact'>
+      <a href={`/${currentLocale}/contact`}>
         <button className='bg-white rounded-md p-2 m-4 px-12 text-blue font-bold text-2xl hover:shadow-lg hover:shadow-black/50'>
-          Contact Us
+          {textContent[`${currentLocale}`].homepage.info[7]}
         </button>
       </a>
     </div>

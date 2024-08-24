@@ -1,16 +1,15 @@
 ---
-import BaseHead from '../../components/BaseHead.astro'
-import Footer from '../../components/Footer'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+import BaseHead from '../../../components/BaseHead.astro'
+import Footer from '../../../components/Footer'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../../consts'
 import { getCollection } from 'astro:content'
-import Header from '../../components/Header'
-import Blog from '../../components/Blog'
+import Header from '../../../components/Header'
+import Blog from '../../../components/Blog'
 const currentLocale = Astro.currentLocale
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
-console.log(currentLocale)
 ---
 
 <!doctype html>
@@ -20,7 +19,7 @@ console.log(currentLocale)
   </head>
   <body>
     <Header client:load currentLocale={currentLocale} />
-    <Blog posts={posts} client:load currentLocale={currentLocale} />
+    <Blog posts={posts} currentLocale={currentLocale} client:load />
     <Footer client:load currentLocale={currentLocale} />
   </body>
 </html>

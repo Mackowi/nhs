@@ -1,0 +1,35 @@
+---
+import BaseHead from '../../components/BaseHead.astro'
+import Header from '../../components/Header.jsx'
+import Footer from '../../components/Footer.jsx'
+import ContactPage from '../../components/ContactPage.jsx'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+const currentLocale = Astro.currentLocale
+---
+
+<!doctype html>
+<html lang={currentLocale}>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap'
+      rel='stylesheet'
+    />
+  </head>
+  <body class='min-h-screen flex flex-col'>
+    <Header client:load currentLocale={currentLocale} />
+    <ContactPage client:load currentLocale={currentLocale} />
+    <Footer client:load currentLocale={currentLocale} />
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/'
+            })
+          }
+        })
+      }
+    </script>
+  </body>
+</html>

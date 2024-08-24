@@ -1,4 +1,4 @@
-function Hero({ isFirstVisit }) {
+function Hero({ isFirstVisit, currentLocale, textContent }) {
   return (
     <div className='container md:mt-16 md:mb-12 mx-auto flex flex-col items-center'>
       <div className='flex flex-col text-blue'>
@@ -10,7 +10,7 @@ function Hero({ isFirstVisit }) {
         >
           Nextgen Hardware Solutions
         </h1>
-        <div className='flex flex-col md:flex-row space-y-4 md:space-y-0 justify-around font-bold items-center py-4'>
+        <div className='flex flex-col lg:flex-row space-y-4 lg:space-y-0 justify-around font-bold items-center py-4 '>
           <div
             className={`flex items-center gap-2 ${
               isFirstVisit ? 'toAnimateFade' : ''
@@ -27,7 +27,7 @@ function Hero({ isFirstVisit }) {
             </svg>
             <a href='#resale'>
               <h4 className='hover:text-green transition-colors duration-200'>
-                Resale
+                {textContent[`${currentLocale}`].homepage.hero[1]}
               </h4>
             </a>
           </div>
@@ -47,7 +47,7 @@ function Hero({ isFirstVisit }) {
             </svg>
             <a href='#integration'>
               <h4 className='hover:text-green transition-colors duration-200'>
-                Integration
+                {textContent[`${currentLocale}`].homepage.hero[2]}
               </h4>
             </a>
           </div>
@@ -68,7 +68,7 @@ function Hero({ isFirstVisit }) {
             </svg>
             <a href='#susServices'>
               <h4 className='hover:text-green transition-colors duration-200'>
-                Sustainability services
+                {textContent[`${currentLocale}`].homepage.hero[3]}
               </h4>
             </a>
           </div>
@@ -81,12 +81,7 @@ function Hero({ isFirstVisit }) {
         }`}
         style={{ animationDelay: '2.5s' }}
       >
-        We strive to increase the technological value of your business and
-        reduce the costs of your infrastructure, taking into account the
-        environmental challenges faced by the IT world. We believe in breaking
-        the mold of traditional sales and offering solutions free from
-        restrictive vendor lock-ins and high licensing fees, empowering you to
-        achieve more with less.
+        {textContent[`${currentLocale}`].homepage.hero[4]}
       </p>
     </div>
   )

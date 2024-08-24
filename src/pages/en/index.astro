@@ -1,13 +1,14 @@
 ---
-import BaseHead from '../components/BaseHead.astro'
-import Header from '../components/Header.jsx'
-import Footer from '../components/Footer.jsx'
-import ContactPage from '../components/ContactPage.jsx'
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import BaseHead from '../../components/BaseHead.astro'
+import Header from '../../components/Header.jsx'
+import Footer from '../../components/Footer.jsx'
+import HomePage from '../../components/HomePage.jsx'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts'
+const currentLocale = Astro.currentLocale
 ---
 
 <!doctype html>
-<html lang='en'>
+  <html lang={currentLocale}>
   <head>
     <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
     <link
@@ -15,10 +16,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
       rel='stylesheet'
     />
   </head>
-  <body class='min-h-screen flex flex-col'>
-    <Header client:load />
-    <ContactPage client:load />
-    <Footer client:load />
+  <body>
+    <Header client:load currentLocale={currentLocale}/>
+    <HomePage client:load currentLocale={currentLocale}/>
+    <Footer client:load currentLocale={currentLocale}/>
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {

@@ -1,59 +1,74 @@
 import { useEffect, useState } from 'react'
+import LangSwitcher from './LangSwitcher'
+import textContent from './textContent.json'
 
-function Header() {
+function Header({ currentLocale }) {
   const [open, setOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('')
   const [isFirstVisit, setIsFirstVisit] = useState(false)
 
   useEffect(() => {
-    if (window.location.pathname === '/') {
+    if (window.location.pathname === `/${currentLocale}/`) {
       setCurrentPage('home')
-    } else if (window.location.pathname === '/about/') {
+    } else if (window.location.pathname === `/${currentLocale}/about`) {
       setCurrentPage('about')
-    } else if (window.location.pathname === '/blog/') {
+    } else if (window.location.pathname === `/blog/${currentLocale}/`) {
       setCurrentPage('blog')
-    } else if (window.location.pathname === '/contact/') {
+    } else if (window.location.pathname === `/${currentLocale}/contact`) {
       setCurrentPage('contact')
     }
     const visitedBefore = localStorage.getItem('isFirstVisit')
     if (!visitedBefore) {
       setIsFirstVisit(true)
-      // localStorage.setItem('isFirstVisit', 'true')
+      localStorage.setItem('isFirstVisit', 'true')
     }
-  }, [])
+  }, [currentLocale])
+
+  // console.log(textContent[`${currentLocale}`].header[1])
 
   return (
-    <header className='container mx-auto p-6 relative'>
+    <header className='container mx-auto p-6 md:p-4 relative'>
       <div
         className={`flex items-center justify-between ${
           currentPage === 'home' && isFirstVisit ? 'toAnimateFade' : ''
         }`}
         style={{ animationDelay: currentPage === 'home' ? '3s' : '0s' }}
       >
-        <a href='/'>
+        <a href={`/${currentLocale}/`}>
           <img src='/logo.png' alt='logo' className='w-16' />
         </a>
         <div className='hidden md:flex items-center space-x-8 '>
-          {currentPage !== 'home' && (
-            <a href='/' className='link'>
-              Home
+          {currentPage !== 'about' ? (
+            <a href={`/${currentLocale}/about`} className='link'>
+              {textContent[`${currentLocale}`].header[1]}
+            </a>
+          ) : (
+            <a href={`/${currentLocale}`} className='link'>
+              {textContent[`${currentLocale}`].header[4]}
             </a>
           )}
-          {currentPage !== 'about' && (
-            <a href='/about' className='link'>
-              About Us
+
+          {currentPage !== 'blog' ? (
+            <a href={`/blog/${currentLocale}`} className='link'>
+              {textContent[`${currentLocale}`].header[2]}
+            </a>
+          ) : (
+            <a href={`/${currentLocale}`} className='link'>
+              {textContent[`${currentLocale}`].header[4]}
             </a>
           )}
-          {currentPage !== 'blog' && (
-            <a href='/blog' className='link'>
-              Products / Blog
+
+          {currentPage !== 'contact' ? (
+            <a href={`/${currentLocale}/contact`} className='link'>
+              {textContent[`${currentLocale}`].header[3]}
+            </a>
+          ) : (
+            <a href={`/${currentLocale}`} className='link'>
+              {textContent[`${currentLocale}`].header[4]}
             </a>
           )}
-          {currentPage !== 'contact' && (
-            <a href='/contact' className='link'>
-              Contact
-            </a>
-          )}
+
+          <LangSwitcher currentLocale={currentLocale} />
         </div>
         <button
           id='menu-btn'
@@ -80,52 +95,53 @@ function Header() {
         <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
           {currentPage !== 'home' && (
             <a
-              href='/'
+              href={`/${currentLocale}/`}
               className='link'
               onClick={() => {
                 setOpen(!open)
                 document.body.classList.toggle('overflow-hidden')
               }}
             >
-              Home
+              {textContent[`${currentLocale}`].header[4]}
             </a>
           )}
           {currentPage !== 'about' && (
             <a
-              href='/about'
+              href={`/${currentLocale}/about`}
               className='link'
               onClick={() => {
                 setOpen(!open)
                 document.body.classList.toggle('overflow-hidden')
               }}
             >
-              About
+              {textContent[`${currentLocale}`].header[1]}
             </a>
           )}
           {currentPage !== 'blog' && (
             <a
-              href='/blog'
+              href={`/blog/${currentLocale}/`}
               className='link'
               onClick={() => {
                 setOpen(!open)
                 document.body.classList.toggle('overflow-hidden')
               }}
             >
-              Product / services
-            </a>
-          )}{' '}
-          {currentPage !== 'contact' && (
-            <a
-              href='/contact'
-              className='link'
-              onClick={() => {
-                setOpen(!open)
-                document.body.classList.toggle('overflow-hidden')
-              }}
-            >
-              Contact
+              {textContent[`${currentLocale}`].header[2]}
             </a>
           )}
+          {currentPage !== 'contact' && (
+            <a
+              href={`/${currentLocale}/contact`}
+              className='link'
+              onClick={() => {
+                setOpen(!open)
+                document.body.classList.toggle('overflow-hidden')
+              }}
+            >
+              {textContent[`${currentLocale}`].header[3]}
+            </a>
+          )}
+          <LangSwitcher currentLocale={currentLocale} />
         </div>
       </div>
     </header>

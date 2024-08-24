@@ -1,14 +1,13 @@
 import { useState } from 'react'
-import FormattedDate from './FormattedDate.astro'
 import TagFilters from './TagFilters'
 
 type IndexBlogProps = {
   posts: object[]
+  currentLocale: any
 }
 
-const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
+const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
   const [selectedTags, setSelectedTags] = useState([])
-  // const [filteredPosts, setFilteredPosts] = useState([])
   const tagCount: Record<string, number> = {}
 
   const handleTagSelect = (tag: string) => {
@@ -22,7 +21,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
 
   posts.forEach((post: any) => {
     const tags = post.data.tags || []
-    tags.forEach((tag) => {
+    tags.forEach((tag: never) => {
       if (tagCount[tag]) {
         tagCount[tag] += 1
       } else {
@@ -31,8 +30,8 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
     })
   })
 
-  console.log('Selected Tags:')
-  console.log(selectedTags)
+  // console.log('Selected Tags:')
+  // console.log(selectedTags)
 
   const filteredPosts =
     selectedTags.length === 0
@@ -42,8 +41,8 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
           return postTags.some((tag: never) => selectedTags.includes(tag))
         })
 
-  console.log('filteredPosts:')
-  console.log(filteredPosts)
+  // console.log('filteredPosts:')
+  // console.log(filteredPosts)
 
   return (
     <main className='container mx-auto mt-4'>
@@ -57,8 +56,11 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts }) => {
       <section className='p-8'>
         <ul className='flex flex-wrap gap-8 justify-center'>
           {filteredPosts.map((post: any, index) => (
-            <li className='w-full md:w-[47%] text-center md:first:w-full md:first:mb-20 first:mb-8'>
-              <a href={`/blog/${post.slug}/`}>
+            <li
+              key={index}
+              className='w-full md:w-[47%] text-center md:first:w-full md:first:mb-20 first:mb-8'
+            >
+              <a href={`/blog/${currentLocale}/${post.slug}/`}>
                 <img
                   src={post.data.heroImage}
                   alt={`blog post${index}`}

@@ -3,8 +3,9 @@ import Hero from './Hero'
 import Companies from './Companies'
 import Info from './Info'
 import Services from './Services'
+import textContent from './textContent.json'
 
-function HomePage() {
+function HomePage({ currentLocale }) {
   const [isFirstVisit, setIsFirstVisit] = useState(false)
 
   useEffect(() => {
@@ -17,10 +18,18 @@ function HomePage() {
 
   return (
     <main>
-      <Hero isFirstVisit={isFirstVisit} />
-      <Services isFirstVisit={isFirstVisit} />
-      <Companies />
-      <Info />
+      <Hero
+        isFirstVisit={isFirstVisit}
+        currentLocale={currentLocale}
+        textContent={textContent}
+      />
+      <Services
+        isFirstVisit={isFirstVisit}
+        currentLocale={currentLocale}
+        textContent={textContent}
+      />
+      <Companies currentLocale={currentLocale} textContent={textContent} />
+      <Info currentLocale={currentLocale} textContent={textContent} />
     </main>
   )
 }

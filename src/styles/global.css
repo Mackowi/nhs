@@ -21,8 +21,24 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .link {
   @apply tracking-widest text-blue font-bold hover:text-darkerBlue hover:underline hover:underline-offset-4 hover:decoration-2
+}
+
+.switch {
+  @apply  text-blue font-bold rounded-2xl text-sm 
+}
+
+ul li:first-child .title {
+  @apply text-center text-3xl
+}
+
+.active {
+  @apply bg-blue text-white hover:text-white 
 }
 
 .hamburger {
@@ -70,11 +86,6 @@
   background: #265296;
 }
 
-ul li:first-child .title {
-  @apply text-center text-3xl
-}
-
-
 .serviceSection {
   @apply flex flex-col text-xl text-justify items-center
 }
@@ -93,8 +104,4 @@ ul li:first-child .title {
 
 .companiesLogoBorder {
   @apply border-blue/20 border-b-2 border-l-2 border-r-2 rounded-2xl
-}
-
-html {
-  scroll-behavior: smooth;
 }

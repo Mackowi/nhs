@@ -3,21 +3,18 @@ import type { CollectionEntry } from 'astro:content'
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import FormattedDate from '../components/FormattedDate.astro'
-
+const currentLocale = Astro.currentLocale
 type Props = CollectionEntry<'blog'>['data']
-
 const { title, description, pubDate, updatedDate, heroImage, tags } =
   Astro.props
 ---
 
-<html lang='en'>
+<html lang={currentLocale}>
   <head>
     <BaseHead title={title} description={description} />
   </head>
-
   <body>
-    <Header client:load />
+    <Header client:load currentLocale={currentLocale} />
     <main class='container mx-auto px-4'>
       <article>
         <div>
@@ -34,7 +31,7 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
         <div class='my-6'>
           <div class='text-2xl mb-12'>
             <h1>{title}</h1>
-            <div class='text-xl'>
+            <!-- <div class='text-xl'>
               <FormattedDate date={pubDate} />
               {
                 updatedDate && (
@@ -43,13 +40,13 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
                   </div>
                 )
               }
-            </div>
+            </div> -->
             <hr />
           </div>
           <slot />
         </div>
       </article>
     </main>
-    <Footer client:load />
+    <Footer client:load currentLocale={currentLocale} />
   </body>
 </html>

@@ -1,46 +1,46 @@
 const images = [
   {
-    path: 'company1.png',
+    path: '../company1.png',
     url: 'https://objectfirst.com/',
   },
   {
-    path: 'company2.png',
+    path: '../company2.png',
     url: 'https://www.silicom-usa.com/',
   },
   {
-    path: 'company3.png',
+    path: '../company3.png',
     url: 'https://www.seagate.com/',
   },
   {
-    path: 'company4.png',
+    path: '../company4.png',
     url: 'https://nebul.com/',
   },
   {
-    path: 'company5.png',
+    path: '../company5.png',
     url: 'https://kaytus.com/',
   },
 ]
 
-function Companies() {
+function Companies({ currentLocale, textContent }) {
   return (
     <div className='container mx-auto py-12'>
-      <div className='hidden md:flex bg-blue text-white text-center py-2 rounded-2xl mb-2'>
+      <div className='hidden lg:flex bg-blue text-white text-center py-2 rounded-2xl mb-2 items-center'>
         <div className='w-4/5 md:w-1/4 border-r-2'>
-          <h4>Server</h4>
+          <h4>{textContent[`${currentLocale}`].homepage.companies[1]}</h4>
         </div>
         <div className='w-4/5 md:w-1/4 border-r-2'>
-          <h4>Storage</h4>
+          <h4>{textContent[`${currentLocale}`].homepage.companies[2]}</h4>
         </div>
         <div className='w-4/5 md:w-1/4 border-r-2'>
-          <h4>Networking</h4>
+          <h4>{textContent[`${currentLocale}`].homepage.companies[3]}</h4>
         </div>
         <div className='w-4/5 md:w-1/4 border-r-2'>
-          <h4>AI</h4>
+          <h4>{textContent[`${currentLocale}`].homepage.companies[4]}</h4>
         </div>
       </div>
-      <div className='flex flex-col md:flex-row items-center md:items-start gap-16 md:gap-0'>
-        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
-          <h4 className='bg-blue text-white text-center md:hidden block py-1 rounded-t-xl'>
+      <div className='flex flex-col lg:flex-row items-center lg:items-start gap-16 lg:gap-0'>
+        <div className='flex flex-col w-4/5 lg:w-1/4 companiesLogoBorder lg:border-none'>
+          <h4 className='bg-blue text-white text-center lg:hidden block py-1 rounded-t-xl'>
             Server
           </h4>
           <div className='flex flex-col'></div>
@@ -48,8 +48,8 @@ function Companies() {
             <img key={`Kaytus`} src={images[4].path} alt={`Logo Kaytus`} />
           </a>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
-          <h3 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
+        <div className='flex flex-col w-4/5 lg:w-1/4 companiesLogoBorder lg:border-none'>
+          <h3 className='bg-blue text-white text-center lg:hidden block rounded-t-xl py-1'>
             Storage
           </h3>
           <div className='flex flex-col'>
@@ -65,8 +65,8 @@ function Companies() {
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
-          <h4 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
+        <div className='flex flex-col w-4/5 lg:w-1/4 companiesLogoBorder lg:border-none'>
+          <h4 className='bg-blue text-white text-center lg:hidden block rounded-t-xl py-1'>
             Networking
           </h4>
           <div className='flex flex-col'>
@@ -75,8 +75,8 @@ function Companies() {
             </a>
           </div>
         </div>
-        <div className='flex flex-col w-4/5 md:w-1/4 companiesLogoBorder md:border-none'>
-          <h4 className='bg-blue text-white text-center md:hidden block rounded-t-xl py-1'>
+        <div className='flex flex-col w-4/5 lg:w-1/4 companiesLogoBorder lg:border-none'>
+          <h4 className='bg-blue text-white text-center lg:hidden block rounded-t-xl py-1'>
             AI
           </h4>
           <div className='flex flex-col'>

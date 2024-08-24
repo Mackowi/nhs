@@ -16,7 +16,7 @@ const schema = yup
   })
   .required()
 
-function ContactPage() {
+function ContactPage({ currentLocale }) {
   const {
     register,
     handleSubmit,
