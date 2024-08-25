@@ -5,7 +5,7 @@ import Info from './Info'
 import Services from './Services'
 import textContent from './textContent.json'
 
-function HomePage({ currentLocale }) {
+function HomePage({ currentLocale = 'pl' }) {
   const [isFirstVisit, setIsFirstVisit] = useState(false)
 
   useEffect(() => {

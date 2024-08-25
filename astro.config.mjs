@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind'
 import node from '@astrojs/node'
 
 export default defineConfig({
-  site: 'https://rafalnhs.netlify.app',
+  site: 'https://rafalnhs.netlify.app/pl',
   integrations: [mdx(), sitemap(), react(), tailwind()],
   output: 'static',
   adapter: node({
