@@ -10,7 +10,6 @@ const currentLocale = Astro.currentLocale
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 )
-console.log(currentLocale)
 ---
 
 <!doctype html>

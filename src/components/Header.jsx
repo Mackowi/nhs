@@ -2,7 +2,12 @@ import { useEffect, useState } from 'react'
 import LangSwitcher from './LangSwitcher'
 import textContent from './textContent.json'
 
-function Header({ currentLocale }) {
+const header = {
+  pl: ['O Nas', 'Rozwiązania', 'Kontakt', 'Strona Główna'],
+  en: ['About Us', 'Solutions', 'Contact', 'Home'],
+}
+
+function Header({ currentLocale = 'pl' }) {
   const [open, setOpen] = useState(false)
   const [currentPage, setCurrentPage] = useState('')
   const [isFirstVisit, setIsFirstVisit] = useState(false)
@@ -24,8 +29,6 @@ function Header({ currentLocale }) {
     }
   }, [currentLocale])
 
-  // console.log(textContent[`${currentLocale}`].header[1])
-
   return (
     <header className='container mx-auto p-6 md:p-4 relative'>
       <div
@@ -40,31 +43,31 @@ function Header({ currentLocale }) {
         <div className='hidden md:flex items-center space-x-8 '>
           {currentPage !== 'about' ? (
             <a href={`/${currentLocale}/about`} className='link'>
-              {textContent[`${currentLocale}`].header[1]}
+              {header[`${currentLocale}`][0]}
             </a>
           ) : (
             <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
+              {header[`${currentLocale}`][3]}
             </a>
           )}
 
           {currentPage !== 'blog' ? (
             <a href={`/blog/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[2]}
+              {header[`${currentLocale}`][1]}
             </a>
           ) : (
             <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
+              {header[`${currentLocale}`][3]}
             </a>
           )}
 
           {currentPage !== 'contact' ? (
             <a href={`/${currentLocale}/contact`} className='link'>
-              {textContent[`${currentLocale}`].header[3]}
+              {header[`${currentLocale}`][2]}
             </a>
           ) : (
             <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
+              {header[`${currentLocale}`][3]}
             </a>
           )}
 
@@ -92,7 +95,7 @@ function Header({ currentLocale }) {
           open ? 'flex' : 'hidden'
         } animate-fade`}
       >
-        <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
+        {/* <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
           {currentPage !== 'home' && (
             <a
               href={`/${currentLocale}/`}
@@ -142,7 +145,7 @@ function Header({ currentLocale }) {
             </a>
           )}
           <LangSwitcher currentLocale={currentLocale} />
-        </div>
+        </div> */}
       </div>
     </header>
   )

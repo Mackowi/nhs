@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import textContent from './textContent.json'
 
-function Footer({ currentLocale }) {
+function Footer({ currentLocale = 'pl' }) {
   const [currentPage, setCurrentPage] = useState('')
 
   useEffect(() => {
