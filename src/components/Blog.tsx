@@ -60,7 +60,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
               key={index}
               className='w-full md:w-[47%] text-center md:first:w-full md:first:mb-20 first:mb-8'
             >
-              <a href={`/blog/${currentLocale}/${post.slug}/`}>
+              <a href={`/blog/${post.slug}/`}>
                 <img
                   src={post.data.heroImage}
                   alt={`blog post${index}`}
