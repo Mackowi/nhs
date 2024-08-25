@@ -7,7 +7,7 @@ function swapLanguage(url) {
       return url.replace('en', 'pl')
     }
   } else {
-    return url.replace('/', '/pl')
+    return url.replace('/', '/en')
   }
 }
 
