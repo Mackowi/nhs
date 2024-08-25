@@ -9,12 +9,6 @@ function Info({ currentLocale, textContent }) {
           {textContent[`${currentLocale}`].homepage.info[2]}
         </p>
       </div>
-      {/* <ul className='text-xl text-white list-disc mt-6'>
-        <li>Cloud Providers</li>
-        <li>Large & Mid Enterprises</li>
-        <li>Data Centers</li>
-        <li>Managed Services Providers</li>
-      </ul> */}
       <div className='flex flex-col bg-darkerBlue text-xl text-white font-bold rounded-2xl gap-4 md:gap-2 py-6 px-8'>
         <p className='p-2  tracking-widest'>
           {textContent[`${currentLocale}`].homepage.info[3]}

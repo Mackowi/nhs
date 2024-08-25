@@ -78,10 +78,10 @@ function ContactPage({ currentLocale }) {
         </div>
       </div>
 
-      <div className='container mx-auto pt-12 md:pt-20 flex flex-col md:space-y-8 text-center'>
-        <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-12 md:mx-auto'>
+      <div className='container mx-auto pt-12  flex flex-col md:space-y-8 text-center'>
+        <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-auto md:gap-20'>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-2'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -102,7 +102,7 @@ function ContactPage({ currentLocale }) {
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4 '>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-2 '>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -127,7 +127,7 @@ function ContactPage({ currentLocale }) {
             </div>
           </div>
           <div className='space-y-8'>
-            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-4'>
+            <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-2'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
@@ -230,7 +230,7 @@ function ContactPage({ currentLocale }) {
             </div>
             <button
               type='submit'
-              className='text-2xl text-white py-5 px-10 font-bold bg-green rounded-full hover:opacity-70 mx-auto'
+              className='text-2xl text-white p-2 m-4 px-10 font-bold bg-green rounded-md hover:opacity-70 mx-auto'
             >
               Send
             </button>
