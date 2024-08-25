@@ -50,7 +50,7 @@ function ContactPage({ currentLocale }) {
   //   resetField('message')
   // }
   const onSubmit = () => {
-    console.log('test')
+    console.log('Form submitted')
     // resetField('name')
     // resetField('lastName')
     // resetField('phone')
