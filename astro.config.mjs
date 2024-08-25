@@ -6,7 +6,7 @@ import tailwind from '@astrojs/tailwind'
 import node from '@astrojs/node'
 
 export default defineConfig({
-  site: 'https://rafalnhs.netlify.app/pl',
+  site: 'https://rafalnhs.netlify.app/',
   integrations: [mdx(), sitemap(), react(), tailwind()],
   output: 'static',
   adapter: node({
@@ -16,7 +16,7 @@ export default defineConfig({
     defaultLocale: 'pl',
     locales: ['pl', 'en'],
     routing: {
-      prefixDefaultLocale: true,
+      // prefixDefaultLocale: true,
     },
   },
 })
