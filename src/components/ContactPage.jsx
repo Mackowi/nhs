@@ -5,6 +5,7 @@ import { useRef } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import textContent from './textContent.json'
+import { sendEmail } from '@netlify/emails'
 
 const schema = yup
   .object({
@@ -49,8 +50,24 @@ function ContactPage({ currentLocale }) {
   //   resetField('email')
   //   resetField('message')
   // }
-  const onSubmit = () => {
+  const onSubmit = async () => {
     console.log('Form submitted')
+
+    try {
+      console.log('Form submitted2')
+
+      await sendEmail({
+        from: 'test@suty.pl',
+        to: 'devmaciek@gmail.com',
+        subject: 'tests',
+        template: 'contact',
+        parameters: {
+          name: 'dsadsa',
+        },
+      })
+    } catch (e) {
+      console.log(e)
+    }
     // resetField('lastName')
     // resetField('phone')
     // resetField('email')
@@ -151,7 +168,8 @@ function ContactPage({ currentLocale }) {
             {textContent[`${currentLocale}`].contact[3]}
           </h3>
           <form
-            onSubmit={handleSubmit(onSubmit)}
+            // onSubmit={handleSubmit(onSubmit)}
+            onSubmit={onSubmit}
             className='flex flex-col space-y-6 md:space-y-8 w-full text-green md:w-3/4 mx-auto '
             ref={form}
           >
