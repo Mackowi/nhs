@@ -20,29 +20,30 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
   }
 
   posts.forEach((post: any) => {
-    const tags = post.data.tags || []
-    tags.forEach((tag: never) => {
-      if (tagCount[tag]) {
-        tagCount[tag] += 1
-      } else {
-        tagCount[tag] = 1
-      }
-    })
+    if (post.data.language === currentLocale) {
+      const tags = post.data.tags || []
+      tags.forEach((tag: string) => {
+        if (tagCount[tag]) {
+          tagCount[tag] += 1
+        } else {
+          tagCount[tag] = 1
+        }
+      })
+    }
   })
 
-  // console.log('Selected Tags:')
-  // console.log(selectedTags)
+  const languageFilteredPosts = posts.filter((post: any) => {
+    const postLanguage = post.data.language
+    return postLanguage == currentLocale
+  })
 
-  const filteredPosts =
+  const tagFilteredPosts =
     selectedTags.length === 0
-      ? posts
-      : posts.filter((post: any) => {
+      ? languageFilteredPosts
+      : languageFilteredPosts.filter((post: any) => {
           const postTags = post.data.tags || []
           return postTags.some((tag: never) => selectedTags.includes(tag))
         })
-
-  // console.log('filteredPosts:')
-  // console.log(filteredPosts)
 
   return (
     <main className='container mx-auto mt-4 py-8'>
@@ -55,7 +56,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
       </div>
       <section className='p-8'>
         <ul className='flex flex-wrap gap-8 justify-center'>
-          {filteredPosts.map((post: any, index) => (
+          {tagFilteredPosts.map((post: any, index) => (
             <li
               key={index}
               className='w-full md:w-[47%] text-center md:first:w-full md:first:mb-20 first:mb-8'

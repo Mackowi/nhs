@@ -4,18 +4,19 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import { formatBlogDate } from '../utils/dateUtils'
-const currentLocale = Astro.currentLocale
 type Props = CollectionEntry<'blog'>['data']
-const { title, description, pubDate, updatedDate, heroImage, tags } =
+const { title, description, pubDate, updatedDate, heroImage, tags, language } =
   Astro.props
+const currentLocale = Astro.currentLocale
+console.log(language)
 ---
 
-<html lang={currentLocale}>
+<html lang={language}>
   <head>
     <BaseHead title={title} description={description} />
   </head>
   <body>
-    <Header client:load currentLocale={currentLocale} />
+    <Header client:load currentLocale={language} />
     <main class='container mx-auto px-4 pt-8 pb-12'>
       <article>
         <div>
@@ -46,6 +47,6 @@ const { title, description, pubDate, updatedDate, heroImage, tags } =
         </div>
       </article>
     </main>
-    <Footer client:load currentLocale={currentLocale} />
+    <Footer client:load currentLocale={language} />
   </body>
 </html>
