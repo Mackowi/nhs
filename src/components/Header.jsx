@@ -30,7 +30,7 @@ function Header({ currentLocale = 'pl' }) {
   }, [currentLocale])
 
   return (
-    <header className='container mx-auto p-6 md:p-4 relative'>
+    <header className='container mx-auto p-4 md:p-4 relative'>
       <div
         className={`flex items-center justify-between ${
           currentPage === 'home' && isFirstVisit ? 'toAnimateFade' : ''

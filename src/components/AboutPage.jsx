@@ -2,7 +2,7 @@ import textContent from './textContent.json'
 
 function AboutPage({ currentLocale }) {
   return (
-    <main className='flex-grow'>
+    <main className='flex-grow px-4'>
       <div className='container py-12 md:pl-12 my-24 mt-12 mx-auto flex flex-col lg:flex-row gap-12 bg-lightPurple rounded-2xl tracking-wide'>
         <div className='flex flex-col w-3/4 mx-auto'>
           <div className='text-white'>

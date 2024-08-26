@@ -1,10 +1,10 @@
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import emailjs from '@emailjs/browser'
 import { useRef } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import textContent from './textContent.json'
 
 const schema = yup
   .object({
@@ -51,35 +51,28 @@ function ContactPage({ currentLocale }) {
   // }
   const onSubmit = () => {
     console.log('Form submitted')
-    // resetField('name')
     // resetField('lastName')
     // resetField('phone')
     // resetField('email')
     // resetField('message')
   }
   return (
-    <main className='flex-grow'>
-      <div className='mt-12'>
-        <div
-          id='contactHero'
-          className='md:hidden mx-3 relative bg-green rounded-2xl'
-        >
-          <h1 className='text-center px-6 py-32 font-bold text-white text-5xl'>
-            Contact
+    <main className='flex flex-col flex-grow items-center py-8 md:py-12 px-4'>
+      <div className='container'>
+        <div className='md:hidden bg-green rounded-2xl'>
+          <h1 className='text-center py-12 font-bold text-white text-5xl'>
+            {textContent[`${currentLocale}`].contact[1]}
           </h1>
         </div>
-        <div
-          id='contactHero'
-          className='hidden md:block container rounded-2xl mx-auto relative bg-green'
-        >
-          <h1 className='text-center px-6 py-24 font-bold text-white text-5xl'>
-            Contact
+        <div className='hidden md:block container rounded-2xl mx-auto bg-green'>
+          <h1 className='text-center py-24 font-bold text-white text-5xl'>
+            {textContent[`${currentLocale}`].contact[1]}
           </h1>
         </div>
       </div>
 
-      <div className='container mx-auto pt-12  flex flex-col md:space-y-8 text-center'>
-        <div className='flex flex-col md:flex-row justify-around space-y-12 md:space-y-0 md:space-x-8 lg:space-x-12 text-xl mx-auto md:gap-20'>
+      <div className='container py-8 md:pt-24 flex flex-col md:space-y-8 text-center'>
+        <div className='flex flex-col lg:flex-row justify-around gap-8 lg:gap-0 text-xl'>
           <div className='space-y-8'>
             <div className='flex space-x-4 items-center justify-center font-bold border-2 border-green text-green rounded-lg p-2'>
               <svg
@@ -148,13 +141,15 @@ function ContactPage({ currentLocale }) {
                 />
               </svg>
               <p className='font-bold tracking-wider text-green'>
-                Amersfoort, Netherlands
+                {textContent[`${currentLocale}`].contact[2]}
               </p>
             </div>
           </div>
         </div>
-        <div className='pb-12 md:pb-8 rounded-2xl flex flex-col text-green'>
-          <h3 className='py-12'>Please fill the below form to contact us</h3>
+        <div className='md:pb-8 rounded-2xl flex flex-col text-green'>
+          <h3 className='py-12'>
+            {textContent[`${currentLocale}`].contact[3]}
+          </h3>
           <form
             onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col space-y-6 md:space-y-8 w-full text-green md:w-3/4 mx-auto '
@@ -164,12 +159,12 @@ function ContactPage({ currentLocale }) {
               <div className='flex flex-col md:w-1/2'>
                 <input
                   {...register('name', { required: true })}
-                  placeholder='Name'
+                  placeholder={textContent[`${currentLocale}`].contact[4]}
                   className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.name && (
                   <span className='text-red-500 pt-1 mt-1'>
-                    This field is mandatory
+                    {textContent[`${currentLocale}`].contact[10]}
                   </span>
                 )}
               </div>
@@ -177,12 +172,12 @@ function ContactPage({ currentLocale }) {
               <div className='flex flex-col md:w-1/2'>
                 <input
                   {...register('lastName')}
-                  placeholder='Last Name'
+                  placeholder={textContent[`${currentLocale}`].contact[5]}
                   className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.lastName && (
                   <span className='text-red-500 pt-1'>
-                    This field is mandatory
+                    {textContent[`${currentLocale}`].contact[10]}
                   </span>
                 )}
               </div>
@@ -192,12 +187,12 @@ function ContactPage({ currentLocale }) {
               <div className='flex flex-col md:w-1/2'>
                 <input
                   {...register('email', { required: true })}
-                  placeholder='Email'
+                  placeholder={textContent[`${currentLocale}`].contact[6]}
                   className='border-green rounded-md border-2 p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.email && (
                   <span className='text-red-500 pt-1'>
-                    This field is mandatory
+                    {textContent[`${currentLocale}`].contact[10]}
                   </span>
                 )}
               </div>
@@ -205,12 +200,12 @@ function ContactPage({ currentLocale }) {
               <div className='flex flex-col  md:w-1/2'>
                 <input
                   {...register('phone')}
-                  placeholder='Phone'
+                  placeholder={textContent[`${currentLocale}`].contact[7]}
                   className='border-green rounded-md border-2  p-2 pl-4 tracking-widest focus:outline-green'
                 />
                 {errors.phone && (
                   <span className='text-red-500 pt-1'>
-                    This field is mandatory
+                    {textContent[`${currentLocale}`].contact[10]}
                   </span>
                 )}
               </div>
@@ -219,12 +214,12 @@ function ContactPage({ currentLocale }) {
             <div className='flex flex-col w-full'>
               <textarea
                 {...register('message', { required: true })}
-                placeholder='Message'
+                placeholder={textContent[`${currentLocale}`].contact[8]}
                 className=' rounded-md border-2 border-green p-2 pl-4 tracking-widest focus:outline-green'
               />
               {errors.message && (
                 <span className='text-red-500 pt-1'>
-                  This field is mandatory
+                  {textContent[`${currentLocale}`].contact[10]}
                 </span>
               )}
             </div>
@@ -232,7 +227,7 @@ function ContactPage({ currentLocale }) {
               type='submit'
               className='text-2xl text-white p-2 m-4 px-10 font-bold bg-green rounded-md hover:opacity-70 mx-auto'
             >
-              Send
+              {textContent[`${currentLocale}`].contact[9]}
             </button>
           </form>
         </div>

@@ -17,7 +17,7 @@ function HomePage({ currentLocale = 'pl' }) {
   }, [])
 
   return (
-    <main>
+    <main className='flex flex-col items-center'>
       <Hero
         isFirstVisit={isFirstVisit}
         currentLocale={currentLocale}

@@ -42,15 +42,24 @@
         "7": "Kontakt"
       }
     },
-    "footer": "Rybnik, Poland",
+    "footer": "Rybnik, Polska",
     "aboutUs": {
       "1": "Misja",
       "2": "\"Po latach pracy w branży IT, dostarczając rozwiązania hardware’owe, postanowiłem założyć NextGen Hardware Solutions z zamiarem dostarczania nowoczesnych rozwiązań w najlepszej cenie. Moje doświadczenie pokazało, jak wielcy producenci wykorzystują rozbudowane modele licencyjne do utrzymania klienta w swoim ekosystemie. Tak naprawdę, istnieją świetne rozwiązania bez tych wad, i jesteśmy tutaj, aby je Ci  dostarczyć!\"",
       "3": " - Rafal, założyciel."
     },
-    "solutions": {},
-    "contact": {},
-    "blog": {}
+    "contact": {
+      "1": "Kontakt",
+      "2": "Rybnik, Polska",
+      "3": "Proszę wypełnić poniższy formularz, aby się z nami skontaktować",
+      "4": "Imię",
+      "5": "Nazwisko",
+      "6": "Email",
+      "7": "Telefon",
+      "8": "Wiadomość",
+      "9": "Wyślij",
+      "10": "To pole jest wymagane!"
+    }
 },
   "en":{
     "header": {
@@ -101,8 +110,17 @@
       "2": "\"After years of working in the hardware industry, selling hardware solutions of major OEMs, I decided to start NextGen Hardware Solutions with the aim of providing customers with cutting-edge solutions at the best price point. My experience in the industry revealed how big OEMs leverage on vendor lock-ins and heavy licensing models. But guess what? There are great solutions out there without all those disadvantages, and we are here to bring them to you!\"",
       "3": " - Rafal, founder."
     },
-    "solutions": {},
-    "contact": {},
-    "blog": {}
+    "contact": {
+      "1": "Contact",
+      "2": "Amersfoort, Netherlands",
+      "3": "Please fill the below form to contact us",
+      "4": "Name",
+      "5": "Last Name",
+      "6": "Email",
+      "7": "Phone",
+      "8": "Message",
+      "9": "Send",
+      "10": "This field is mandatory!"
+    }
   }
 }

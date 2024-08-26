@@ -1,12 +1,12 @@
 function Services({ isFirstVisit, textContent, currentLocale }) {
   return (
     <div
-      className={`container mx-auto flex flex-col text-white py-8 mt-12 ${
+      className={`container flex flex-col text-white py-8 mt-12${
         isFirstVisit ? 'toAnimateMove' : ''
       }`}
       style={{ animationDelay: '3s' }}
     >
-      <div className='bg-blue serviceSection rounded-t-2xl'>
+      <div className='bg-blue serviceSection rounded-t-2xl mx-4 md:mx-0'>
         <div className='serviceElement' id='resale'>
           <div className='flex items-center gap-4 pb-8 '>
             <h3>{textContent[`${currentLocale}`].homepage.services[1]}</h3>
@@ -22,7 +22,7 @@ function Services({ isFirstVisit, textContent, currentLocale }) {
           <p>{textContent[`${currentLocale}`].homepage.services[2]}</p>
         </div>
       </div>
-      <div className='bg-darkBlue serviceSection' id='integration'>
+      <div className='bg-darkBlue serviceSection mx-4 md:mx-0' id='integration'>
         <div className='serviceElement'>
           <div className='flex items-center gap-4 pb-8'>
             <h3>{textContent[`${currentLocale}`].homepage.services[3]}</h3>
@@ -40,7 +40,7 @@ function Services({ isFirstVisit, textContent, currentLocale }) {
       </div>
 
       <div
-        className='bg-darkerBlue serviceSection rounded-b-2xl'
+        className='bg-darkerBlue serviceSection rounded-b-2xl mx-4 md:mx-0'
         id='susServices'
       >
         <div className='serviceElement'>
