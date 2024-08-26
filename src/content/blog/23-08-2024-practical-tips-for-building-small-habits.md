@@ -5,6 +5,7 @@ pubDate: 2024-08-23T21:04:00.000Z
 heroImage: /upload/img_1506.jpg
 tags:
   - AI
+language: pl
 ---
 
 Psychologists have studied how habits form and found that it's the small, easy-to-complete tasks that are more likely to stick. When we set goals that are too ambitious, our brains resist because they perceive them as too difficult. Small tasks, on the other hand, are less intimidating. Once we start, the brain releases dopamine, which makes us feel good, encouraging us to repeat the behavior.

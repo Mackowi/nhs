@@ -7,7 +7,7 @@ public_folder: '/upload'
 
 collections:
   - name: 'blog' # Used in routes, e.g., /admin/collections/blog
-    label: 'Blog' # Used in the UI
+    label: 'Nextgen Hardware Solutions Blog' # Used in the UI
     folder: 'src/content/blog' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: '{{day}}-{{month}}-{{year}}-{{slug}}' # Filename template, e.g., DD-MM-YYYY-title.md
@@ -25,3 +25,13 @@ collections:
           allow_add: true,
           hint: 'Add relevant tags for this post.',
         }
+      - { 
+          label: 'Language', 
+          name: 'language', 
+          widget: 'select', 
+          options: 
+            - { label: 'Polish', value: 'pl' }
+            - { label: 'English', value: 'en' },
+          default: 'pl',
+          hint: 'Select the language of the post.'
+        }  

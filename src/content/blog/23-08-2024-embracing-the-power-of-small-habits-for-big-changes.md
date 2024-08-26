@@ -6,6 +6,7 @@ heroImage: /upload/img_1777.jpg
 tags:
   - server
   - intel
+language: pl
 ---
 
 In a world that constantly pushes for bigger, faster, and stronger, it’s easy to overlook the impact of small, incremental changes. We often get caught up in the idea that success is a giant leap forward when, in reality, it's more often the result of consistent, small steps. This is where the power of small habits comes into play.

@@ -19,7 +19,7 @@ const posts = (await getCollection('blog')).sort(
   </head>
   <body>
     <Header client:load currentLocale={currentLocale} />
-    <Blog posts={posts} client:load />
+    <Blog posts={posts} currentLocale={currentLocale} client:load />
     <Footer client:load currentLocale={currentLocale} />
   </body>
 </html>

@@ -45,7 +45,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
   // console.log(filteredPosts)
 
   return (
-    <main className='container mx-auto mt-4'>
+    <main className='container mx-auto mt-4 py-8'>
       <div>
         <TagFilters
           tags={Object.keys(tagCount)}

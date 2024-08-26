@@ -1,4 +1,4 @@
-function swapLanguage(url) {
+const swapLanguage = (url) => {
   const match = url.match(/(pl|en)/i)
   if (match) {
     if (match[0] === 'pl') {
