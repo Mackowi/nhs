@@ -30,8 +30,8 @@ collections:
           name: 'language', 
           widget: 'select', 
           options: 
-            - { label: 'Polish', value: 'pl' }
-            - { label: 'English', value: 'en' },
+            - { label: 'Polish', value: 'pl' },
+            - { label: 'English', value: 'en' }
           default: 'pl',
           hint: 'Select the language of the post.'
         }  
