@@ -3,6 +3,10 @@ import { swapLanguage } from '../utils/urlUtils'
 
 const LanguageSwitcher = ({ currentLocale }) => {
   const changeLanguage = () => {
+    const blogRegex = /blog*/
+    if(window.location.href.match()) {
+
+    }
     let newUrl = swapLanguage(window.location.pathname)
     window.location.href = newUrl
   }
