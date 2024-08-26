@@ -1,13 +1,10 @@
-import { getRelativeLocaleUrl } from 'astro:i18n'
 import { swapLanguage } from '../utils/urlUtils'
 
 const LanguageSwitcher = ({ currentLocale }) => {
   const changeLanguage = () => {
-    const blogRegex = /blog*/
-    if(window.location.href.match()) {
-
-    }
-    let newUrl = swapLanguage(window.location.pathname)
+    let newUrl = swapLanguage(window.location.pathname, currentLocale)
+    console.log('newUrl')
+    console.log(newUrl)
     window.location.href = newUrl
   }
 
