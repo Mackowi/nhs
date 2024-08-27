@@ -18,7 +18,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@emailjs/browser": "^4.3.3",
     "@hookform/resolvers": "^3.3.4",
-    "@netlify/emails": "^1.1.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "astro": "^4.12.2",

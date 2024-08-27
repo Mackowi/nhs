@@ -5,7 +5,7 @@ import { useRef } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import textContent from './textContent.json'
-import { sendEmail } from '@netlify/emails'
+import emailjs from '@emailjs/browser'
 
 const schema = yup
   .object({
@@ -27,52 +27,34 @@ function ContactPage({ currentLocale }) {
 
   const form = useRef()
 
-  // const onSubmit = () => {
-  //   emailjs
-  //     .sendForm('service_eiwiwjh', 'template_pdpuapr', form.current, {
-  //       publicKey: 'NlNL6pzajeeWEe8MS',
-  //     })
-  //     .then(
-  //       () => {
-  //         toast.success('Wiadomość wysłana!', {
-  //           progressClassName: 'toastProgress',
-  //         })
-  //       },
-  //       (error) => {
-  //         toast.error('Coś poszło nie tak!', {})
-  //         console.log(error)
-  //       }
-  //     )
-
-  //   resetField('name')
-  //   resetField('lastName')
-  //   resetField('phone')
-  //   resetField('email')
-  //   resetField('message')
-  // }
-  const onSubmit = async () => {
-    console.log('Form submitted')
-
-    try {
-      console.log('Form submitted2')
-
-      await sendEmail({
-        from: 'test@suty.pl',
-        to: 'devmaciek@gmail.com',
-        subject: 'tests',
-        template: 'contact',
-        parameters: {
-          name: 'dsadsa',
-        },
+  const onSubmit = () => {
+    emailjs
+      .sendForm('service_i4luui7', 'template_ims3uzq', form.current, {
+        publicKey: 'q8EWGQ_esIC9VXjl0',
       })
-    } catch (e) {
-      console.log(e)
-    }
+      .then(
+        () => {
+          toast.success('Wiadomość wysłana!', {
+            progressClassName: 'toastProgress',
+          })
+          resetField('name')
+          resetField('lastName')
+          resetField('phone')
+          resetField('email')
+          resetField('message')
+        },
+        (error) => {
+          toast.error('Coś poszło nie tak!', {})
+          console.log(error)
+        }
+      )
+    // resetField('name')
     // resetField('lastName')
     // resetField('phone')
     // resetField('email')
     // resetField('message')
   }
+
   return (
     <main className='flex flex-col flex-grow items-center py-8 md:py-12 px-4'>
       <div className='container'>
@@ -168,8 +150,7 @@ function ContactPage({ currentLocale }) {
             {textContent[`${currentLocale}`].contact[3]}
           </h3>
           <form
-            // onSubmit={handleSubmit(onSubmit)}
-            onSubmit={onSubmit}
+            onSubmit={handleSubmit(onSubmit)}
             className='flex flex-col space-y-6 md:space-y-8 w-full text-green md:w-3/4 mx-auto '
             ref={form}
           >
