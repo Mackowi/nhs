@@ -8,7 +8,45 @@ tags:
   - intel
 language: pl
 ---
+# The Complete Guide to Markdown Formatting
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Introduction
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Markdown is a lightweight markup language that allows you to format text using a plain-text editor. It's widely used in documentation, blogs, and content management systems. In this guide, we'll explore all the **text formatting** options available in Markdown.
+
+---
+
+## 1. Text Styles
+
+### **1.1 Bold Text**
+
+To make text bold, enclose it in double asterisks (`**`) or double underscores (`__`):
+
+- **This text is bold**.
+- __This text is also bold__.
+
+### **1.2 Italic Text**
+
+To italicize text, enclose it in single asterisks (`*`) or single underscores (`_`):
+
+- *This text is italic*.
+- _This text is also italic_.
+
+### **1.3 Bold and Italic Combined**
+
+You can combine bold and italic by using a mix of asterisks and underscores:
+
+- ***This text is bold and italic***.
+- ___This text is also bold and italic___.
+
+## 2. Headings
+
+Markdown supports six levels of headings, which are created by prefixing the text with one or more `#` symbols:
+
+```markdown
+# H1 Heading
+## H2 Heading
+### H3 Heading
+#### H4 Heading
+##### H5 Heading
+###### H6 Heading
