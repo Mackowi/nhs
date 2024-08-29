@@ -29,8 +29,8 @@ function ContactPage({ currentLocale }) {
 
   const onSubmit = () => {
     emailjs
-      .sendForm('service_i4luui7', 'template_ims3uzq', form.current, {
-        publicKey: 'q8EWGQ_esIC9VXjl0',
+      .sendForm('service_vapnqqn', 'template_rwb73sq', form.current, {
+        publicKey: 'ytS5LNPuvDfj-ABVm',
       })
       .then(
         () => {
