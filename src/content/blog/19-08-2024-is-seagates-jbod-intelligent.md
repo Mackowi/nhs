@@ -8,40 +8,24 @@ tags:
   - seagate
 language: en
 ---
-<p style="font-family: Abady, extra-light;">
-
-Seagate launched their own storage solutions around 2022. This move fits into the broader trend of hardware manufacturers entering related horizontals. Seagate is primarily known as a leading HDD and SSD vendor.
+**Seagate** launched their own storage solutions around 2022. This move fits into the broader trend of hardware manufacturers entering related horizontals. Seagate is primarily known as a leading HDD and SSD vendor.
 
 Seagate released several series of storage products, including the Exos X, Exos AP, Exos E, and their flagship Exos Corvault.
 
-</p>
 
 
-
-<p style="font-family: Arial, sans-serif;">
-
-<strong>What makes Corvault stand out?</strong><br>
+**What makes Corvault stand out?**
 
 Let's point out a few hardware and feature highlights.
 
-</p>
+• Four mini-SAS-3 HD ports on each controller
 
+• Redundant, active-active controllers (VelosCT) 
 
+• 2.12PB capacity
 
-<p style="font-family: Arial, sans-serif;">
+• 4U form factor
 
-<strong>Hardware key points:</strong><br>
-
-• Four mini-SAS-3 HD ports on each controller<br>
-
-• Redundant, active-active controllers (VelosCT) - hot-swappable<br>
-
-• 2.12PB capacity<br>
-
-• 4U form factor<br>
-
-• 1.2 meters deep<br>
+• 1.2 meters deep
 
 • Dual independent power and cooling systems - hot-swappable
-
-</p>
