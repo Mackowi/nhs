@@ -8,7 +8,7 @@ tags:
   - seagate
 language: pl
 ---
-<p style="font-family: Agency FB;">
+<p style="font-family: abady;">
 
 Seagate launched their own storage solutions around 2022. This move fits into the broader trend of hardware manufacturers entering related horizontals. Seagate is primarily known as a leading HDD and SSD vendor.
 
