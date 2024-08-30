@@ -1,6 +1,6 @@
 ---
 title: Is Seagate's JBOD intelligent?!
-description: 'Seagate Courvault JBOD '
+description: "Seagate Courvault JBOD "
 pubDate: 2024-08-19T15:37:00.000Z
 heroImage: /upload/exos-corvault_left-open_lo-res.jpg
 tags:
@@ -8,35 +8,40 @@ tags:
   - seagate
 language: pl
 ---
+<p style="font-family: Agency FB;">
 
-Seagate launched around 2022 their own storage solutions. It fits in broader trend of hardware manufacturers entering related horizontals. Seagate is known primarily as leading HDD and SSDs vendor.
+Seagate launched their own storage solutions around 2022. This move fits into the broader trend of hardware manufacturers entering related horizontals. Seagate is primarily known as a leading HDD and SSD vendor.
 
-Seagate released few series of storage as: Exos X, Exos AP, Exos E and their flagship Exos Corvault.
+Seagate released several series of storage products, including the Exos X, Exos AP, Exos E, and their flagship Exos Corvault.
 
-What makes Corvault stands out?
+</p>
 
-Let's point out few hardware and feature highlights.
 
-Hardware key points:
 
-Four mini-SAS-3 HD ports on each controller
+<p style="font-family: Arial, sans-serif;">
 
-Redundant, active-active controllers (VelosCT) - hot swapable
+<strong>What makes Corvault stand out?</strong><br>
 
-2.12PB capable
+Let's point out a few hardware and feature highlights.
 
-4U
+</p>
 
-1,2 meters deep!
 
-Dual independent power and cooling systems- hot swapable
 
-Features novelties:
+<p style="font-family: Arial, sans-serif;">
 
-Autonomous Drive Regeneration (ADR), which helps in reducing human intervention by automatically managing and correcting drive issues.
+<strong>Hardware key points:</strong><br>
 
-Seagate's self-encrypting drives (SEDs) and FIPS 140-2 certified drives, offering robust security for sensitive data.
+• Four mini-SAS-3 HD ports on each controller<br>
 
-- ADAPT, the rebuild that took days now takes only minutes. For details check:
+• Redundant, active-active controllers (VelosCT) - hot-swappable<br>
 
-Thanks to ADAPT technology discs in Corvault are rebuilding in a hours not days.
+• 2.12PB capacity<br>
+
+• 4U form factor<br>
+
+• 1.2 meters deep<br>
+
+• Dual independent power and cooling systems - hot-swappable
+
+</p>
