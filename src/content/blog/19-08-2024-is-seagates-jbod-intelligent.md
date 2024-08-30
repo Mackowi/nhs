@@ -6,7 +6,7 @@ heroImage: /upload/exos-corvault_left-open_lo-res.jpg
 tags:
   - storage
   - seagate
-language: pl
+language: en
 ---
 <p style="font-family: Abady, extra-light;">
 
