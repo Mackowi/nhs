@@ -47,7 +47,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
 
   return (
     <main className='container mx-auto mt-4 py-8'>
-      <div>
+      <div className='mb-4'>
         <TagFilters
           tags={Object.keys(tagCount)}
           selectedTags={selectedTags}
@@ -65,7 +65,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
                 <img
                   src={post.data.heroImage}
                   alt={`blog post${index}`}
-                  className='rounded-xl h-[400px] md:h-[500px] w-full object-cover hover:shadow-2xl'
+                  className='rounded-xl h-[400px] md:h-[500px] w-full md:w-3/4 mx-auto object-cover hover:shadow-2xl'
                 />
                 <h5 className='mt-4 title'>{post.data.title}</h5>
               </a>

@@ -15,7 +15,7 @@ const swapLanguage = (url, currentLocale) => {
       return url.replace('en', 'pl')
     }
   } else {
-    return url.replace('/', '/en')
+    return (url = '/blog/en/')
   }
 }
 
