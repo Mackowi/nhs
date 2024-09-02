@@ -9,7 +9,9 @@ language: en
 ---
 **CO2-led IT Procurement Strategy**
 
-There’s a new player in town within the IT landscape: CO2. Recent regulations and policies in the EU are embracing sustainability in IT and encouraging businesses to track their carbon footprint.
+There’s a new player in town within the IT landscape: CO2. 
+
+Recent regulations and policies in the EU are embracing sustainability in IT and encouraging businesses to track their carbon footprint.
 
 It’s a challenging yet fascinating topic. Why? Because, in my experience, traditional “spend-based” procurement strategies now have an alternative or complementary metric—embodied carbon!
 
