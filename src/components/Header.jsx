@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import LangSwitcher from './LangSwitcher'
-import textContent from './textContent.json'
+import textContent from '../content/textContent.json'
 
 // const header = {
 //   pl: ['O Nas', 'Rozwiązania', 'Kontakt', 'Strona Główna'],

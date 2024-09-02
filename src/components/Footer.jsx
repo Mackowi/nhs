@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import textContent from './textContent.json'
+import textContent from '../content/textContent.json'
 
 function Footer({ currentLocale = 'pl' }) {
   const [currentPage, setCurrentPage] = useState('')

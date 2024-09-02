@@ -3,7 +3,7 @@ import Hero from './Hero'
 import Companies from './Companies'
 import Info from './Info'
 import Services from './Services'
-import textContent from './textContent.json'
+import textContent from '../content/textContent.json'
 
 function HomePage({ currentLocale = 'pl' }) {
   const [isFirstVisit, setIsFirstVisit] = useState(false)
