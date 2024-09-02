@@ -11,9 +11,7 @@ There’s a new player in town within the IT landscape: CO2. Recent regulations 
 
 It’s a challenging yet fascinating topic. Why? Because, in my experience, traditional “spend-based” procurement strategies now have an alternative or complementary metric—embodied carbon!
 
-At NGHS, we focus on hardware (storage, networking, servers). We have already completed several projects with our partners, where we created business cases centered on servers and storage. Our main metrics were CO2 embodied carbon and po
-
-wer efficiency.
+At NGHS, we focus on hardware (storage, networking, servers). We have already completed several projects with our partners, where we created business cases centered on servers and storage. Our main metrics were CO2 embodied carbon and power efficiency.
 
 The results were impressive! By focusing on CO2 metrics, we identified areas of savings and provided calculations on CO2 avoidance. 
 
