@@ -292,3 +292,19 @@ article td {
 article th {
   vertical-align: bottom; /* Aligns header content to the bottom */
 }
+
+article img {
+  border: 1px solid #ddd; /* Adds a subtle border around the image */
+  border-radius: 8px; /* Rounds the corners of the image for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to lift the image */
+}
+
+article p img {
+  max-width: 100%; /* Ensures the image does not exceed its container's width */
+  height: auto; /* Maintains the image's aspect ratio */
+  border: 1px solid #ddd; /* Adds a subtle border around the image */
+  border-radius: 8px; /* Rounds the corners of the image for a polished look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to lift the image */
+  @apply mx-auto my-14
+}
+
