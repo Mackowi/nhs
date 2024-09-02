@@ -3,12 +3,9 @@ import type { CollectionEntry } from 'astro:content'
 import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import { formatBlogDate } from '../utils/dateUtils'
 type Props = CollectionEntry<'blog'>['data']
 const { title, description, pubDate, updatedDate, heroImage, tags, language } =
   Astro.props
-const currentLocale = Astro.currentLocale
-console.log(language)
 ---
 
 <html lang={language}>
@@ -34,7 +31,6 @@ console.log(language)
           <div class='text-2xl mb-12'>
             <h1>{title}</h1>
             <div class='text-xl'></div>
-            <hr />
           </div>
           <slot />
         </div>
