@@ -41,36 +41,18 @@ function Header({ currentLocale = 'pl' }) {
           <img src='/logo.png' alt='logo' className='w-16' />
         </a>
         <div className='hidden md:flex items-center space-x-8 '>
-          {currentPage !== 'about' ? (
-            <a href={`/${currentLocale}/about`} className='link'>
-              {textContent[`${currentLocale}`].header[1]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
-
-          {currentPage !== 'blog' ? (
-            <a href={`/blog/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[2]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
-
-          {currentPage !== 'contact' ? (
-            <a href={`/${currentLocale}/contact`} className='link'>
-              {textContent[`${currentLocale}`].header[3]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
-
+          <a href={`/${currentLocale}`} className='link'>
+            {textContent[`${currentLocale}`].header[4]}
+          </a>
+          <a href={`/${currentLocale}/about`} className='link'>
+            {textContent[`${currentLocale}`].header[1]}
+          </a>
+          <a href={`/blog/${currentLocale}`} className='link'>
+            {textContent[`${currentLocale}`].header[2]}
+          </a>
+          <a href={`/${currentLocale}/contact`} className='link'>
+            {textContent[`${currentLocale}`].header[3]}
+          </a>
           <LangSwitcher currentLocale={currentLocale} />
         </div>
         <button
@@ -96,18 +78,16 @@ function Header({ currentLocale = 'pl' }) {
         } animate-fade`}
       >
         <div className='flex flex-col justify-center p-8 items-start w-full space-y-16 font-bold text-xl relative'>
-          {currentPage !== 'home' && (
-            <a
-              href={`/${currentLocale}/`}
-              className='link'
-              onClick={() => {
-                setOpen(!open)
-                document.body.classList.toggle('overflow-hidden')
-              }}
-            >
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
+          <a
+            href={`/${currentLocale}/`}
+            className='link'
+            onClick={() => {
+              setOpen(!open)
+              document.body.classList.toggle('overflow-hidden')
+            }}
+          >
+            {textContent[`${currentLocale}`].header[4]}
+          </a>
           {currentPage !== 'about' && (
             <a
               href={`/${currentLocale}/about`}

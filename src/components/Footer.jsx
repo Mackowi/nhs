@@ -39,33 +39,18 @@ function Footer({ currentLocale = 'pl' }) {
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>
-          {currentPage !== 'about' ? (
-            <a href={`/${currentLocale}/about`} className='link'>
-              {textContent[`${currentLocale}`].header[1]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
-          {currentPage !== 'blog' ? (
-            <a href={`/blog/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[2]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
-          {currentPage !== 'contact' ? (
-            <a href={`/${currentLocale}/contact`} className='link'>
-              {textContent[`${currentLocale}`].header[3]}
-            </a>
-          ) : (
-            <a href={`/${currentLocale}`} className='link'>
-              {textContent[`${currentLocale}`].header[4]}
-            </a>
-          )}
+          <a href={`/${currentLocale}`} className='link'>
+            {textContent[`${currentLocale}`].header[4]}
+          </a>
+          <a href={`/${currentLocale}/about`} className='link'>
+            {textContent[`${currentLocale}`].header[1]}
+          </a>
+          <a href={`/blog/${currentLocale}`} className='link'>
+            {textContent[`${currentLocale}`].header[2]}
+          </a>
+          <a href={`/${currentLocale}/contact`} className='link'>
+            {textContent[`${currentLocale}`].header[3]}
+          </a>
         </div>
       </div>
     </footer>
