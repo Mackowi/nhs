@@ -45,7 +45,12 @@ function Companies({ currentLocale, textContent }) {
           </h4>
           <div className='flex flex-col'></div>
           <a href={images[4].url} className='mx-auto '>
-            <img key={`Kaytus`} src={images[4].path} alt={`Logo Kaytus`} />
+            <img
+              key={`Kaytus`}
+              src={images[4].path}
+              alt={`Logo Kaytus`}
+              loading='lazy'
+            />
           </a>
         </div>
         <div className='flex flex-col w-4/5 lg:w-1/4 companiesLogoBorder lg:border-none'>
@@ -54,13 +59,19 @@ function Companies({ currentLocale, textContent }) {
           </h3>
           <div className='flex flex-col'>
             <a href={images[2].url} className='mx-auto'>
-              <img key={`Seagate`} src={images[2].path} alt={`Logo Seagate`} />
+              <img
+                key={`Seagate`}
+                src={images[2].path}
+                alt={`Logo Seagate`}
+                loading='lazy'
+              />
             </a>
             <a href={images[0].url} className='mx-auto'>
               <img
                 key={`Object First`}
                 src={images[0].path}
                 alt={`Logo Object First`}
+                loading='lazy'
               />
             </a>
           </div>
@@ -71,7 +82,12 @@ function Companies({ currentLocale, textContent }) {
           </h4>
           <div className='flex flex-col'>
             <a href={images[1].url} className='mx-auto'>
-              <img key={`Silicom`} src={images[1].path} alt={`Logo Silicom`} />
+              <img
+                key={`Silicom`}
+                src={images[1].path}
+                alt={`Logo Silicom`}
+                loading='lazy'
+              />
             </a>
           </div>
         </div>
@@ -81,7 +97,12 @@ function Companies({ currentLocale, textContent }) {
           </h4>
           <div className='flex flex-col'>
             <a href={images[3].url} className='mx-auto'>
-              <img key={`Nebul`} src={images[3].path} alt={`Logo Nebul`} />
+              <img
+                key={`Nebul`}
+                src={images[3].path}
+                alt={`Logo Nebul`}
+                loading='lazy'
+              />
             </a>
           </div>
         </div>

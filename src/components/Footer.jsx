@@ -29,6 +29,7 @@ function Footer({ currentLocale = 'pl' }) {
               src='/logo.png'
               alt='logo'
               className='w-28 mx-auto mb-12 md:mb-0'
+              loading='lazy'
             />
           </a>
           <div className='flex flex-col gap-4 tracking-widest font-bold text-sm md:text-left'>
