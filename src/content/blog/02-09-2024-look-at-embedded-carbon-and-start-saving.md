@@ -29,6 +29,10 @@ The main gains:
 
 •	Savings of around 35% were achieved compared to the initial BOM, which was based entirely on new equipment.
 
+
+
 Upcoming regulations will introduce Scope 4, which means companies will need to report on CO2 emissions avoided in their IT operations. It’s time to get ready.
+
+
 
 If you would like to analyze your upcoming project, using CO2 metrics, feel free to reach out on **rafal.zydek@nghs.eu** *.*
