@@ -1,4 +1,4 @@
-import textContent from '../content/textContent.json'
+import textContent from './text/textContent.json'
 
 function AboutPage({ currentLocale }) {
   return (

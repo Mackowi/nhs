@@ -4,7 +4,7 @@ import * as yup from 'yup'
 import { useRef } from 'react'
 import { toast, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import textContent from '../content/textContent.json'
+import textContent from './text/textContent.json'
 import emailjs from '@emailjs/browser'
 
 const schema = yup
