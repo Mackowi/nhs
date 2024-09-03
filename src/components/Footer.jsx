@@ -33,7 +33,7 @@ function Footer({ currentLocale = 'pl' }) {
             />
           </a>
           <div className='flex flex-col gap-4 tracking-widest font-bold text-sm md:text-left'>
-            <p>Rafal Żydek</p>
+            <p>Rafał Żydek</p>
             <p>+31 62 481 34 11</p>
             <p>rafal.zydek@nghs.eu</p>
             <p>{textContent[`${currentLocale}`].footer}</p>
