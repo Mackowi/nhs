@@ -37,4 +37,4 @@ Thanks to ADAPT technology discs in Corvault are rebuilding in a hours not days.
 
 ![](/upload/rebuild-times.png "Disc rebuild time")
 
-For whom: Finance, Banking, Crypto, Security
+For whom: Finance, Banking, Crypto, Security, Manufacturing, Enterprise Critical Systems
