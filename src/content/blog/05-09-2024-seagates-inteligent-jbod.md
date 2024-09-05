@@ -9,16 +9,14 @@ tags:
   - Storage
 language: en
 ---
-**Seagate** launched around 2021 their own storage solutions. It fits in broader trend of hardware manufacturers entering related horizontals. Seagate is known primarily as leading HDD and SSDs vendor.
-
-Seagate released few series of storage as: Exos X, Exos AP, Exos E and their flagship Exos Corvault. 
+**Seagate** launched around 2021 their own storage solutions. It fits in broader trend of hardware manufacturers entering related horizontals. Seagate is known primarily as leading HDD and SSDs vendor. Seagate released few series of storage as: Exos X, Exos AP, Exos E and their flagship Exos Corvault. 
 
 **What makes Corvault stands out?**
+
+
 Let’s point out few hardware and feature highlights.
 
 **Hardware key points:** 
-
-</br>
 
 * Four mini-SAS-3 HD ports on each controller
 * Redundant, active-active controllers (VelosCT) - hot swapable
