@@ -42,11 +42,14 @@
         "7": "Kontakt"
       }
     },
-    "footer": "Rybnik, Polska",
+    "footer": {
+      "1":"Rafał Żydek",
+      "2":"Rybnik, Polska"
+    },
     "aboutUs": {
       "1": "Misja",
       "2": "\"Po latach pracy w branży IT hardware, postanowiłem założyć NextGen Hardware Solutions z myślą dostarczania nowoczesnych rozwiązań w najlepszej cenie. Moje doświadczenie pokazało, jak wielcy producenci wykorzystują rozbudowane modele licencyjne do utrzymania klienta w swoim ekosystemie. Tak naprawdę, istnieją świetne rozwiązania bez tych wad, i jesteśmy tutaj, aby Ci je dostarczyć!\"",
-      "3": " - Rafal, założyciel."
+      "3": " - Rafał, założyciel."
     },
     "contact": {
       "1": "Kontakt",
@@ -104,7 +107,10 @@
         "7": "Contact Us"
       }
     },
-    "footer": "Amersfoort, Netherlands",
+    "footer": {
+      "1":"Rafal Zydek",
+      "2":"Amersfoort, Netherlands"
+    },
     "aboutUs": {
       "1": "Our Mission",
       "2": "\"After years of working in the hardware industry, delivering solutions of major OEMs, I decided to start NextGen Hardware Solutions with the aim of providing customers with cutting-edge solutions at the best price point. My experience in the industry revealed how big OEMs leverage on vendor lock-ins and heavy licensing models. But guess what? There are great solutions out there without all those disadvantages, and we are here to bring them to you!\"",

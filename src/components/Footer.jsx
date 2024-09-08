@@ -33,10 +33,10 @@ function Footer({ currentLocale = 'pl' }) {
             />
           </a>
           <div className='flex flex-col gap-4 tracking-widest font-bold text-sm md:text-left'>
-            <p>Rafał Żydek</p>
+            <p>{textContent[`${currentLocale}`].footer[1]}</p>
             <p>+31 62 481 34 11</p>
             <p>rafal.zydek@nghs.eu</p>
-            <p>{textContent[`${currentLocale}`].footer}</p>
+            <p>{textContent[`${currentLocale}`].footer[2]}</p>
           </div>
         </div>
         <div className='flex flex-col items-center justify-center gap-8 order-first md:order-last mb-12 mt-4 text-xl md:text-base'>
