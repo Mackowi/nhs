@@ -2,7 +2,7 @@
 title: What does Nebul do?
 description: AI clusters and private AI journey
 pubDate: 2024-09-12T11:32:00.000Z
-heroImage: /upload/logo-nghs.png
+heroImage: /upload/nebul-logo-blog.jpg
 tags:
   - AI
   - Nvidia
