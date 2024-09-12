@@ -2,7 +2,7 @@
 title: "Strategia zakupowa IT zorientowana na ślad węglowy "
 description: zrównoważony rozwój IT
 pubDate: 2024-09-12T11:16:00.000Z
-heroImage: /upload/1693404646855.jpg.webp
+heroImage: /upload/1693404646855-new.png
 tags:
   - sustainability
   - CSDR
