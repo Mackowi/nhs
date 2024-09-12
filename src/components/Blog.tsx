@@ -65,7 +65,7 @@ const IndexBlog: React.FC<IndexBlogProps> = ({ posts, currentLocale }) => {
                 <img
                   src={post.data.heroImage}
                   alt={`blog post${index}`}
-                  className='rounded-xl h-[400px] md:h-[500px] w-full md:w-3/4 mx-auto object-cover hover:shadow-2xl'
+                  className='rounded-xl h-[250px] md:h-[500px] w-full md:w-3/4 mx-auto object-contain md:object-fill hover:shadow-2xl'
                 />
                 <h5 className='mt-4 title'>{post.data.title}</h5>
               </a>
