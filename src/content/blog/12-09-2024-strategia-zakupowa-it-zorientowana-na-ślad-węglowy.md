@@ -26,6 +26,6 @@ Wyniki były imponujące! Skupiając się na wskaźnikach CO2, zidentyfikowaliś
 * Dostarczyliśmy pełny raport dotyczący unikniętych emisji CO2 oraz węgla wbudowanego w zakupiony sprzęt.
 * Osiągnięto oszczędności na poziomie około 35% w porównaniu z początkową listą materiałową, która opierała się wyłącznie na nowym sprzęcie.
 
-Nadchodzące regulacje wprowadzą Zakres 4 (Scope 4), co oznacza, że firmy będą musiały raportować emisje CO2 uniknięte w swoich operacjach IT. Czas się przygotować.
+Nadchodzące regulacje wprowadząją zakres 4 (Scope 4), co oznacza, że firmy będą musiały raportować emisje CO2 uniknięte w swoich operacjach IT. Czas się przygotować.
 
 Jeśli chciałabyś/byś przeanalizować swój nadchodzący projekt, korzystając z wskaźnika CO2, aby podejmować świadome decyzje zakupowe, skontaktuj się z nami: rafal.zydek@nghs.eu.
