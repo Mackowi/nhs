@@ -18,7 +18,7 @@ W NGHS skupiamy się na urządzeniach enterprise- pamięć masowa, sieci, serwer
 
 Wyniki były imponujące! Skupiając się na wskaźnikach CO2, zidentyfikowaliśmy obszary oszczędności i dostarczyliśmy kalkulacje dotyczące unikania emisji CO2.
 
-Główne korzyści:
+**Główne korzyści:**
 
 * Partner zdecydował się użyć odnowionego sprzętu w 20% z początkowej listy zakupowej(BOM).
 * Zmiana modeli procesorów na bardziej energooszczędne, bez kompromisów w wydajności.
