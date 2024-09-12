@@ -1,5 +1,5 @@
 ---
-title: SEAGATE'S INTELLIGENT JBOD
+title: Seagate's intelligent JBOD
 description: A new era of data security
 pubDate: 2024-09-05T16:54:00.000Z
 heroImage: /upload/exos-corvault_left-open_lo-res.jpg
