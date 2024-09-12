@@ -4,7 +4,7 @@ description: embodied carbon procurement strategy
 pubDate: 2024-09-12T11:06:00.000Z
 heroImage: /upload/1693404646855.jpg.webp
 tags:
-  - sustainability
+  - Sustainability
 language: en
 ---
 **CO2-led IT Procurement Strategy**
