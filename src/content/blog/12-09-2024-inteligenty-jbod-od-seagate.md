@@ -1,5 +1,5 @@
 ---
-title: Inteligenty JBOD od Seagate
+title: Inteligentny JBOD od Seagate
 description: petabyte od Seagate
 pubDate: 2024-09-12T11:25:00.000Z
 heroImage: /upload/exos-corvault_left-open_lo-res.jpg
