@@ -18,6 +18,6 @@ Squeeze more from your I/O and get more flexibility.
 
 Full specs:
 
-[silicom-usa.com/pr/server-adapt](https://www.silicom-usa.com/pr/server-adapt)...
+[https://www.silicom-usa.com/pr/server-adapters/networking-adapters/100-gigabit-ethernet-networking-server-adapters/p488cg4i81-quad-port-100g-ethernet-pcie-card-intel-e810-based/](https://www.silicom-usa.com/pr/server-adapt)
 
 \#silicom #NIC #networking #server #serveradapter
