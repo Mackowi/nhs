@@ -14,10 +14,10 @@ Absolute BEAST!
 
 Latest release from Silicom Ltd's with PCIe 4x100G/16x10G Ethernet (MPN: P488CG4I81)
 
-Squeeze more from your I/O and get more flexibility
+Squeeze more from your I/O and get more flexibility.
 
 Full specs:
 
 [silicom-usa.com/pr/server-adapt](https://www.silicom-usa.com/pr/server-adapt)...
 
-#silicom #NIC #networking #server #serveradapter
+\#silicom #NIC #networking #server #serveradapter
